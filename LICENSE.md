@@ -19,7 +19,7 @@ Der Benutzer ist verpflichtet tägliche Sicherungen seiner Daten zu machen, so
 dass bei Verlust dieser, die Daten jederzeit wieder hergestellt werden können.
 Der Benutzer trägt sämtliche Risiken udn Verantwortung!
 
-**EINSCHRÄNKUNGEN
+**EINSCHRÄNKUNGEN**
 
 Die Software darf nirgends eingesetzt, installiert und betrieben werden, wenn 
 durch Ausfall Menschen zu Schaden kommen können oder erheblicher Schaden oder 
