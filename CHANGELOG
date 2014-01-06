@@ -1,0 +1,199 @@
+Changelog for SearchenginePreview
+=================================
+
+2009-09-25 Version 1.0.1
+    First release of UserJS
+
+2009-09-25 Version 1.1
+    added Preview icon
+
+2009-09-26 Version 1.2
+    added Ask, Ixquick previews
+    some fixes and code shrinking
+
+2009-09-28 Version 1.2.2
+    added GoodSearch
+    added Clusty
+    added large preview of bookcover from amazon
+    patched for yahoo previews
+    added Bing, Web.de, Metager
+
+2009-12-13
+    patches for problems with google-pager
+
+2010-03-04 Version 1.2.3
+    fixes for Opera 10.50
+
+2010-05-06 Version 1.2.4
+    Bugfix for Ixquick
+
+2011-07-18 Version 1.2.5
+    Patches for oAutoPagerize, more code fixes, docu fixes
+    Added: Previews fetched if keypressed or mouse moved
+    Bugfix: Opera 10.50
+    Added: Forestle
+    Added: Excite
+    code shrinking
+    deleted alt text of preview image
+    Changing preview generator to thumbshots.org
+    adding Google custom search
+    fixed some redirected links in MetaGer
+    fixed ixquick
+    added yippy
+    fixed wrong webpage of search.yippy.com
+    fixed problem with configuration icon vs. preview
+    fixed scroll problems on Google
+    fixed missing previews on new Google webpages
+    fixed problems with oPagerize and others on Google
+    fixed problems with Google's wrong redirection to / or /webhp instead 
+    of /search for results
+    fixed ixquick
+
+2011-07-22 Version 1.2.5.1 BETA
+    Patch: for high CPU consumation at Google's picture search with UserJS 
+    "Extra download links" (userjs.org)
+
+2011-09-05 Version 1.2.5.2 BETA
+    changed thumbshot service
+
+2011-09-08 Version 1.2.6-Ex BETA
+    !!!! Switched to extension !!!!
+    Added options page
+
+2011-09-09 Version 1.2.6.1-Ex BETA
+    fixed problem with XPath
+
+2011-09-09 Version 1.2.6.2-Ex RC1
+    fix for metager.de
+    fix for gmx.net
+    Added ecosia.org
+    fix for recursion errors by Yahoo
+
+2011-09-12 Version 1.2.6.2-Ex RC2
+    Added option to enable/disable extension button in toolbar
+    Added license
+
+2011-09-12 Version 1.2.7 Final
+    Autoupdate
+    Fix for invisible button after install
+    some code laundering ;)
+
+2011-09-16 Version 1.2.7.1 Final
+    Fix for visible button
+
+2011-09-22 Version 1.2.7.2 BETA
+    Disabled preview service googlepreview.com (service currently not 
+    available!)
+    Changed preview service to open.thumbshots.com (SSL is enabled for 
+    preview image)
+    Added preview in some SSL secured searches (like encrypted.google.com)
+    Refined german, english locales
+    Added french local
+    Added popup
+
+2011-09-23 Version 1.2.7.3 BETA
+    Fix for incorrect display of text beneath image at Google
+
+2011-09-23 Version 1.2.7.4 BETA
+    Fix for wrong fetch of image preview over SSL
+
+2011-10-05 Version 1.2.8 Final
+    Fixes from 1.2.7.2 Beta, 1.2.7.3 Beta and 1.2.7.4 Beta
+
+2011-10-31 Version 1.2.8.1 Final
+    Resized popup window
+    License and Changelog embedded and accessible in popup
+    Typos in popup
+
+2011-11-28 Version 1.2.8.2 Final
+    Added startpage.com 
+    Fix for ixquick.com
+
+2011-12-01 Version 1.2.8.3 RC
+    Fixed ask.com
+    Added api.thumbalizr.com as preview generator
+    Fixed problems with settings after install
+
+2011-12-05 Version 1.2.8.4 Final
+    Fixed ask.com
+    Added api.thumbalizr.com as preview generator
+    Fixed problems with settings after install
+
+2012-03-19 Version 1.2.8.5 Final
+    Added DuckDuckGo
+    Amazon preview images over SSL
+    other fixes
+
+2012-03-25 Version 1.2.8.6 Final
+    Fixed Ixquick and Startpage (website had changed)
+    Fixed GoodSearch (website had changed)
+    Fixed Ask (website had changed)
+    Fixed special Yahoo searches (embedded in other websites)
+
+2013-02-01 Version 1.2.8.7 BETA
+    Fixed DuckDuckGo 
+    Removed web.de, gmx.de
+
+2013-02-02 Version 1.2.8.8 BETA
+    Added metacrawler.de
+
+2013-02-11 Version 1.2.8.8 Final
+    Fixed DuckDuckGo 
+    Removed web.de, gmx.de
+    Added metacrawler.de
+
+2013-02-25 Version 1.2.9 BETA
+    Removed thumbshot service open.thumbshots.org
+    Added new thumbshot service immediatenet.com
+
+2013-02-25 Version 1.2.9.1 Final
+    Removed thumbshot service open.thumbshots.org
+    Added new thumbshot service immediatenet.com 
+
+2013-02-25 Version 1.2.9.2 Final
+    Added some more information in popup 
+
+2013-04-02 Version 1.2.9.3 BETA
+    Fix bing; strange previewpix because of links to microsofttranslator.com
+    Fix Ecosia; Icon too big in hover mode 
+    Settings can be done in popup
+
+2013-04-02 Version 1.2.9.4 Final
+    Fix Google missing previews
+
+2013-06-01 Version 1.3.0 BETA // Chrome CRX
+    Test as Extension for Chrome and Opera 15
+
+2013-06-01 Version 1.3.0.1 BETA // Chrome CRX
+    Added icon (128x128) for browser's Extension settings page
+    Localized Options and Popup
+
+2013-06-02 Version 1.3.0.2 BETA // Chrome CRX
+    Added yandex.ru
+    Speedup Yahoo search
+    Bugfixes for all searchengines after website changes
+    
+2013-06-02 Version 1.3.0.2 BETA // Opera OEX
+    Added yandex.ru
+    Speedup Yahoo search
+    Bugfixes for all searchengines after website changes
+
+2013-06-04 Version 1.3.0.3 BETA // Chrome CRX
+    Fix Goodsearch
+    Fix results from custom Yahoo search
+
+2013-06-07 Version 1.3.1.0 Final // Opera OEX + Chrome CRX
+    Extension for Chrome and Opera 15
+    Added icon (128x128) for browser's Extension settings page
+    Added yandex.ru
+    Speedup Yahoo search
+    Bugfixes for all searchengines after website changes
+    Localized Options and Popup
+    Fix Goodsearch
+    Fix results from custom Yahoo search
+    
+2013-07-04 Version 1.3.2 Final // Opera OEX, Chrome CRX
+    Added international Google TLDs (thanks to http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/)
+
+
+(c)2009-2013 by GwenDragon, All rights by GwenDragon

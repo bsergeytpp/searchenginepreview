@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>Einstellungen der Extension</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	
+	<body>
+		<div id="options">
+			<h2>Einstellungen für <script>document.write(widget.name);</script></h2>            
+            <p><img class="pic" src="icons/icon.png" /></p>                        
+            <ul class="opts">
+				<li>
+					<label for="previewpic">Vorschau mit </label>
+					<select id="previewpic">
+						<option value="0">Bild</option> 
+						<option value="1">Icon mit Hovereffekt</option> 
+					</select> 
+				</li>            
+	            <li>
+	            	<label for="previewurl">Thumbnails der Website erstellen mit Dienst </label>
+					<select id="previewurl">
+                        <option value="0">api.thumbalizr.com</option>
+						<option value="1">immediatenet.com</option> 
+					</select> 
+				</li>                
+                <li>
+                    <label for="showbutton">Extension-Button einblenden </label>
+					<input type="checkbox" id="showbutton" />                
+                </li>
+			</ul>                        
+            <input id="savebutton" type="submit" value="Einstellungen speichern" /> 		
+			<p><em>Nach Speichern der Einstellungen bitte F5 auf der Webseite drücken, um neu zu laden.</em></p>			
+            <p class="small">
+                <a href="http://gwendragon.de/tools/opera/userjs/#searchenginepreview">
+                <script>document.write(widget.name);</script></a>
+                <script>document.write(widget.version);</script>, 
+                programmiert von <a href="http://gwendragon.de">GwenDragon</a> &copy;2011
+            </p>            
+		</div>
+		<script src="js/prefs.js"></script>				
+	</body>
+
+</html>

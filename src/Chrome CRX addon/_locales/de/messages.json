@@ -1,0 +1,80 @@
+{
+	"version"      : { "message" : "Version"},
+	//
+	"licence"      : { "message" : "Lizenz"},
+	"licence_which" : { "message" : "Personal Licence"},
+	"licence_text1" : { "message" : ", bitte Lizenz lesen."},
+	"licence_text2" : { "message" : "Alle Rechte bei "},
+	//
+	"support_bugs" : { "message" : "Support und Bugs"},
+	"support_bugs_text1" : { "message" : "Diskussionen und Fragen zu für Final- und Beta-Versionen können bei Opera-Info.de im Thread <a target=\"_blank\" href=\"http://opera-info.de/forum/index.php?page=Thread&threadID=22689\">SearchenginePreview (de)</a> und bei my.opera.com im Thread <a target=\"_blank\" href=\"http://my.opera.com/community/forums/topic.dml?id=1118802\">SearchenginePreview (en)</a> gemacht werden."},
+	"support_bugs_text2" : { "message" : "Zögern Sie nicht mich anzuschreiben, um beim Betatest mit zu machen und holen sich die <a target=\"_blank\" href=\"http://labs.gwendragon.de/tools/opera/\">Beta-Versionen</a> meiner <a  target=\"_blank\" href=\"http://gwendragon.de/tools/opera/\">Opera-Tools</a>." },
+	//
+	"setting"     : { "message" : "Einstellungen"},
+	"setting_text1" : { "message" : "Wenn Einstellungen geändert werden sollen, einfach <a href='options.html'>Einstellungen</a> öffnen."},
+	//
+	"changes" : { "message": "Änderungen" },
+	"changes_text1" : { "message": "Bitte das <a href='searchengine-preview-changelog.txt'>Changelog</a> lesen." },
+	//
+	"thanks" : { "message": "Danksagungen und Erwähnungen" },
+	"thanks_text1" : { "message": "Diese Extension und dessen Vorgänger als UserJS konnten nur durch die Hilfe und Inspiration vieler Opera-Nutzer und anderer vollendet werden. Als da folgende zu erwähnen wären:" },
+	"thanks_text2" : { "message": "<ul>
+<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann, die mich zum UserJS für Vorschauen in vielen Suchmaschinen inspirierten</li>
+<li>Opera Community</li>
+<li>Nickko</li>
+<li>Alexs für Bug-Reports und neue Suchmaschinenlinks: google mac, ask, ixquick</li>
+<li>RocknRolf für Suchmaschine: google-linux</li>
+<li>Heidrun für Suchmaschinen: clusty, yippy, metacrawler.de</li>
+<li>Furba, dapxin und andere für: Hinweise zu Problemen mit oAutoPagerize und anderen Pager-Javascripten</li>
+<li>Vercingetorix für: Hinweise zu Problemen mancher Vorschauen in MetaGer</li>
+<li>BigMike für: DuckDuckGo</li>
+<li>and viele andere Tester.</li>
+<li>Ganz besonderen Dank an <a target=\"_blank\" href=\"http://www.opera.com/\">Opera ASA</a> als Mutter des Opera Browsers!</li>
+<li>und besonderen Dank an freie Thumbnail-Dienste bei <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a> und <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a></li>
+</ul>"
+			},
+	//
+	"giveme" : { "message" : "Gefällts?"},
+	"giveme_text" : { "message" : "Wenn die Extension gefällt und nützlich ist, bitte <a target=\"_blank\" href=\"https://www.amazon.de/registry/wishlist/LPWDDLETEI3P/\">Gwens Amazon-Wunschliste</a> ansehen und mir etwas daraus oder einen Amazon-Gutschein schenken.<br>Danke, dass die Extension verwendet wird, es freut mich."},
+	//
+	"description2" : {
+		"message" : "SearchenginePreview zeigt in Opera+Chrome in Suchmaschinenergebnissen Vorschauen der gefundenen Websites an.",
+		"description": "Description of extension"
+	},
+	//
+   "options_title": {
+      "message": "Einstellungen der Extension SearchenginePreview",
+	  "description": "title of options page"
+   },
+   "options_for": {
+		"message": "Einstellungen für SearchenginePreview",
+		"description": "Settings for NAMEOFEXTENSION"
+   },
+    "options_preview_as": {
+		"description": "text for option preview",
+		"message": "Vorschau mit "
+   },
+   "options_preview_pic": {
+		"description": "option pic",
+		"message": "Bild"
+   },
+   "options_preview_iconhover": {
+		"description": "Text option hovericon",
+		"message": "Icon mit Hovereffekt"
+   },
+   "options_preview_url" : {
+		"message" : "Thumbnails der Website erstellen mit Dienst "
+   },
+   "options_preview_showbutton" : {
+		"message" : "Extension-Button einblenden "
+   },
+   "options_preview_savebutton" : {
+		"message" : "Einstellungen speichern"
+   },
+   "options_preview_reloadadvice" : {
+		"message" : "Nach Speichern der Einstellungen bitte F5 auf der Webseite drücken, um neu zu laden."
+   },
+   "options_programmedby" : {
+		"message" : "programmiert von "
+   }
+}

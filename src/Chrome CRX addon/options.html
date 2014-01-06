@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	
+	<body>
+		<div id="options">
+			<h2 data-i18n="options_for">Preferences for Extension</h2>            
+            <p><img src="icons/icon128.png" height="64" width="64" /></p>                        
+            <ul class="opts">
+				<li>
+					<label for="previewpic" data-i18n="options_preview_as"> Preview as </label>
+					<select id="previewpic">
+						<option value="0" data-i18n="options_preview_pic"> Thumbnail</option> 
+						<option value="1" data-i18n="options_preview_iconhover"> Icon with hover</option> 
+					</select> 
+				</li>            
+	            <li>
+	            	<label for="previewurl" data-i18n="options_preview_url"> Create website thumbnail with </label>
+					<select id="previewurl">
+                        <option value="0">api.thumbalizr.com</option>
+						<option value="1">immediatenet.com</option> 
+					</select> 
+				</li>
+			</ul>                        
+            <input id="savebutton" type="submit" data-i18n-value="options_preview_savebutton" value="Save preferences" /> 		
+			<p><em data-i18n="options_preview_reloadadvice">After saving preferences please reload py pressing F5 on keyboard.</em></p>
+            <p>
+				<small><span id="app-name"></span> <span data-i18n="version">version</span> <span id="app-version"></span> <span data-i18n="options_programmedby">programmed by </span></small>
+                <a target="_blank" href="http://gwendragon.de/">GwenDragon</a> &copy;2011.
+            </p>            
+		</div>
+		<script src="localize.js"></script>				
+		<script src="prefs.js"></script>		
+	</body>
+
+</html>

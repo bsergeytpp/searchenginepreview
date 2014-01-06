@@ -1,0 +1,78 @@
+
+{
+	"version"      : { "message" : "Version"},
+	//
+	"licence"      : { "message" : "Licence"},
+	"licence_which" : { "message" : "Personal Licence"},
+	"licence_text1" : { "message" : ", please read Licence lesen."},
+	"licence_text2" : { "message" : "All rights by "},
+	//
+	"support_bugs" : { "message" : "Support and Bugs"},
+	"support_bugs_text1" : { "message" : "Discusssions for Final and Beta versions can be made at Opera-Info.de in thread <a href='http://opera-info.de/forum/index.php?page=Thread&threadID=22689'  target='_blank'>SearchenginePreview (de)</a> and at my.opera.com in thread <a href='http://my.opera.com/community/forums/topic.dml?id=1118802' target='_blank'>SearchenginePreview (en)</a>."},
+	"support_bugs_text2" : { "message" : "Do not hesitate to contact me for Beta testing and <a href='http://labs.gwendragon.de/tools/opera/' target='_blank'>download Beta versions</a> of <a href='http://gwendragon.de/tools/opera/' target='_blank'>my Opera tools</a>." },
+	//
+	"setting"     : { "message" : "Settings"},
+	"setting_text1" : { "message" : "If you need to change preferences, just open link <a href='options.html'>Preferences</a>."},
+	//
+	"changes" : { "message": "Changes" },
+	"changes_text1" : { "message": "Please read the <a href='searchengine-preview-changelog.txt'>changelog</a>." },
+	//
+	"thanks" : { "message": "Thanks and Kudos to" },
+	"thanks_text1" : { "message": "This Extension and the former UserJS could only be finished by the help and inspiration of many Opera users and others as to mention:" },
+	"thanks_text2" : { "message": "<ul>
+	<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann for inspiring me to create UserJS for previews in many search engines</li>
+	<li>Opera Community</li>
+	<li>Nickko</li>
+	<li>Alexs for bug reports and searchengine links: google mac, ask, ixquick</li>
+	<li>RocknRolf for searchengine: google-linux</li>
+	<li>Heidrun for searchengines: clusty, yippy, metacrawler.de</li>
+	<li>Furba, dapxin and others for: hint about problems with oAutoPagerize and other pager scripts</li>
+	<li>Vercingetorix for: hints about problems of some previews in MetaGer</li>
+	<li>BigMike for: DuckDuckGo</li>
+	<li>and many other testers.</li>
+	<li>And special thanks to <a href=\"http://www.opera.com/\" target=\"_blank\">Opera ASA</a> as mother of the Opera Browser!</li>
+	<li>And special thanks to free thumbnail services from <a href=\"http://www.thumbalizr.com/\" target=\"_blank\">thumbalizr.com</a> and <a href=\"http://immediatenet.com/\" target=\"_blank\">immediatenet.com</a></li>
+</ul>" 
+	},
+	//
+	"giveme" : { "message" : "Extension is fine?"},
+	"giveme_text" : { "message" : "If you like this extension, look into <a target=\"_blank\" href=\"https://www.amazon.de/registry/wishlist/LPWDDLETEI3P/\">Gwens Amazon wishes</a> and give me a gift or a Amazon Gift Certificate.<br>Thanks a lot for using the Extension."},
+
+	//
+	"description2" : {
+		"description": "Description of extension",
+		"message" : "SearchenginePreview is a Extension for Opera+Chrome, showing thumbnails of websites in search results of many search engines."
+	},
+   "options_title": {
+	  "description": "Title of options page",
+      "message": "Settings for Extension SearchenginePreview"
+   },
+   "options_for": {
+		"description": "Settings for NAMEOFEXTENSION",
+		"message": "Preferences for Extension"
+   },
+    "options_preview_as": {
+		"description": "text for option preview",
+		"message": "Preview as "
+   },
+   "options_preview_pic": {
+		"description": "option pic",
+		"message": "Thumbnail"
+   },
+   "options_preview_iconhover": {
+		"description": "option hovericon",
+		"message": "Icon with hover"
+   },
+   "options_preview_url" : {
+		"message" : "Create website thumbnail with "
+   },
+   "options_preview_savebutton" : {
+		"message" : "Save preferences"
+   },
+   "options_preview_reloadadvice" : {
+		"message" : "After saving preferences please reload py pressing F5 on keyboard."
+   },
+   "options_programmedby" : {
+		"message" : "programmed by "
+   }
+}

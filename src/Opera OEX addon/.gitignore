@@ -1,0 +1,5 @@
+*.bak
+*~
+log/*.log
+tmp/
+test/

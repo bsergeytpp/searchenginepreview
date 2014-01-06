@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+ToolbarUIItemProperties = {
+	title : "SearchenginePreview " + widget.version,
+	icon : "icons/icon-small.png",
+	popup : {
+		href : "popup.html",
+		width : 600,
+		height : 400
+	}
+};
+button = opera.contexts.toolbar.createItem(ToolbarUIItemProperties);
+toolbar = opera.contexts.toolbar;
+(widget.preferences["showbutton"] == 1) ? opera.contexts.toolbar.addItem(button) : opera.contexts.toolbar.removeItem(button);
+window.addEventListener("load", function () {
+	(widget.preferences["showbutton"] == 1) ? opera.contexts.toolbar.addItem(button) : opera.contexts.toolbar.removeItem(button);
+}, false);
+</script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>Préférences d'extension</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	
+	<body>		
+		<div id="options">
+			<h2>Préférences pour <script>document.write(widget.name);</script></h2>            
+            <p><img class="pic" src="icons/icon.png" /></p>                        
+            <ul class="opts">
+				<li>
+					<label for="previewpic">Aperçu montré par </label>
+					<select id="previewpic">
+						<option value="0">image</option> 
+						<option value="1">icône</option> 
+					</select> 
+				</li>            
+	            <li>
+	            	<label for="previewurl">Générer miniature avec service en </label>
+					<select id="previewurl">
+						<option value="0">api.thumbalizr.com</option>
+						<option value="1">immediatenet.com</option> 
+					</select> 
+				</li>                
+                <li>
+                    <label for="showbutton">Button d'extension visible en barre d'outil </label>
+					<input type="checkbox" id="showbutton" />                
+                </li>
+			</ul>                        
+            <input id="savebutton" type="submit" value="Enregistrez les préférences" /> 		
+			<p><em>Après enregistrez les préférences touchez F5 (réchargement de page Web), s'il vous plaît.</em></p>			
+            <p class="small">
+                <a href="http://gwendragon.de/tools/opera/userjs/#searchenginepreview">
+                <script>document.write(widget.name);</script></a> 
+				<script>document.write(widget.version);</script>, 
+                réalisé par <a href="http://gwendragon.de">GwenDragon</a> &copy;2011
+            </p>            
+		</div>
+		<script src="js/prefs.js"></script>		
+	</body>
+
+</html>

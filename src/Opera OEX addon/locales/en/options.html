@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>Preferences for Extension</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	
+	<body>		
+		<div id="options">
+			<h1>Preferences for <script>document.write(widget.name);</script></h1>            
+			<p><img class="pic" src="icons/icon.png" /></p>            
+			<ul class="opts">
+                <li>
+                    <label for="previewpic">Preview as </label>
+                    <select id="previewpic">
+                        <option value="0">Thumbnail</option> 
+                        <option value="1">Icon with hover</option> 
+                    </select>
+                </li>
+                <li>
+                    <label for="previewurl">Create website thumbnail with </label>
+                    <select id="previewurl">
+                        <option value="0">api.thumbalizr.com</option>
+                        <option value="1">immediatenet.com</option> 
+                    </select>                    
+                </li>
+                <li>
+                    <label for="showbutton">Show extension's button in toolbar </label>
+					<input type="checkbox" id="showbutton" />                
+                </li>
+            </ul>            
+            <input id="savebutton" type="submit" value="Save preferences" /> 		
+			<p><em>After saving preferences please reload py pressing F5 on keyboard.</em></p>			
+            <p class="small">
+                <a href="http://gwendragon.de/tools/opera/userjs/#searchenginepreview">
+                <script>document.write(widget.name);</script></a> 
+				<script>document.write(widget.version);</script>, 
+                made by <a href="http://gwendragon.de">GwenDragon</a> &copy;2011
+            </p>			
+		</div>
+		<script src="js/prefs.js"></script>		
+	</body>
+
+</html>
