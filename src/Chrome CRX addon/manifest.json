@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.3.2",
+	"version" : "1.3.3",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
@@ -22,7 +22,8 @@
 	"options_page" : "options.html",
 	//
 	"background" : {
-		"page" : "background.html"
+		"page" : "background.html",
+		 "persistent": false
 	},
 	//
 	"content_scripts" : [

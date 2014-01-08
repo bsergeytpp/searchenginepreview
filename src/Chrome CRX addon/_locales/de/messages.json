@@ -7,7 +7,7 @@
 	"licence_text2" : { "message" : "Alle Rechte bei "},
 	//
 	"support_bugs" : { "message" : "Support und Bugs"},
-	"support_bugs_text1" : { "message" : "Diskussionen und Fragen zu für Final- und Beta-Versionen können bei Opera-Info.de im Thread <a target=\"_blank\" href=\"http://opera-info.de/forum/index.php?page=Thread&threadID=22689\">SearchenginePreview (de)</a> und bei my.opera.com im Thread <a target=\"_blank\" href=\"http://my.opera.com/community/forums/topic.dml?id=1118802\">SearchenginePreview (en)</a> gemacht werden."},
+	"support_bugs_text1" : { "message" : "Diskussionen und Fragen zu Final- und Beta-Versionen können bei my.opera.com im Thread <a target=\"_blank\" href=\"http://my.opera.com/community/forums/topic.dml?id=1118802\">SearchenginePreview (en)</a> gemacht werden."},
 	"support_bugs_text2" : { "message" : "Zögern Sie nicht mich anzuschreiben, um beim Betatest mit zu machen und holen sich die <a target=\"_blank\" href=\"http://labs.gwendragon.de/tools/opera/\">Beta-Versionen</a> meiner <a  target=\"_blank\" href=\"http://gwendragon.de/tools/opera/\">Opera-Tools</a>." },
 	//
 	"setting"     : { "message" : "Einstellungen"},
@@ -19,6 +19,7 @@
 	"thanks" : { "message": "Danksagungen und Erwähnungen" },
 	"thanks_text1" : { "message": "Diese Extension und dessen Vorgänger als UserJS konnten nur durch die Hilfe und Inspiration vieler Opera-Nutzer und anderer vollendet werden. Als da folgende zu erwähnen wären:" },
 	"thanks_text2" : { "message": "<ul>
+<li>In Erinnerung an <a href=\"http://opera-info.de/forum/index.php?page=Thread&amp;threadID=31471\" target=\"_blank\"><i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)</a><br>Vater des deutschen Opera-Info-Forum, Übersetzer, warmherzige Person, mit kompentem Jahrzehnte reichenden Wissen über den Opera Browser, ein Freund. <br>Wir werden dich vermissen.</li>
 <li>Edward Ackroyd, Oliver Roth, Carlo Zottmann, die mich zum UserJS für Vorschauen in vielen Suchmaschinen inspirierten</li>
 <li>Opera Community</li>
 <li>Nickko</li>

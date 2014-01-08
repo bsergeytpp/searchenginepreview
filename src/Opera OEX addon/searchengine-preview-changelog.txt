@@ -196,4 +196,10 @@ Changelog for SearchenginePreview
     Added international Google TLDs (thanks to http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/)
 
 
-(c)2009-2013 by GwenDragon, All rights by GwenDragon
+2014-01-08 Version 1.3.3 "Kawime" Final // Chrome CRX, Opera OEX
+    In Memoriam of Karsten "kawime" Mehrhoff, founder of german Opera-Info forum, Opera translator
+    Removed links to opera-info.de
+    Typos in Popup content
+    CRX Extension's Background process loads on demand now
+
+(c)2009-2014 by GwenDragon, All rights by GwenDragon

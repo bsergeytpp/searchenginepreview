@@ -8,10 +8,10 @@ SearchenginePreview is a addon for Opera (12.x, Opera 15 and newer), Chrome and 
 Download of last version at GitHub
 
 For Opera (<= 12.x) browsers:   
-<https://github.com/GwenDragon/searchenginepreview/blob/master/searchengine-preview.crx>  
+<https://github.com/GwenDragon/searchenginepreview/raw/master/searchengine-preview.oex>  
 
 For Chrome, Chromium-like and Opera (TABLE, >= 15.x) browsers:  
-<https://github.com/GwenDragon/searchenginepreview/blob/master/searchengine-preview.oex>
+<https://github.com/GwenDragon/searchenginepreview/raw/master/searchengine-preview.crx>
 
 ##Autoupdate
 
@@ -22,6 +22,8 @@ Current versions are updated by Operas autoupdate feature for add-ons and fetech
 At Operas extensions forum at <http://my.opera.com/community/forums/topic.dml?id=1118802> or by Mail <mailto:info@gwendragon.de> (if i have spare time).
 
 ##Licence
+
+Free for personal use.
 
 See <http://gwendragon.de/repo/stdlizenz.txt> and <https://github.com/GwenDragon/searchenginepreview/blob/master/LICENSE.md>  
 Changes without notice.

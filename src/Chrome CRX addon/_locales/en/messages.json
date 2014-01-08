@@ -4,11 +4,11 @@
 	//
 	"licence"      : { "message" : "Licence"},
 	"licence_which" : { "message" : "Personal Licence"},
-	"licence_text1" : { "message" : ", please read Licence lesen."},
+	"licence_text1" : { "message" : ", please read Licence."},
 	"licence_text2" : { "message" : "All rights by "},
 	//
 	"support_bugs" : { "message" : "Support and Bugs"},
-	"support_bugs_text1" : { "message" : "Discusssions for Final and Beta versions can be made at Opera-Info.de in thread <a href='http://opera-info.de/forum/index.php?page=Thread&threadID=22689'  target='_blank'>SearchenginePreview (de)</a> and at my.opera.com in thread <a href='http://my.opera.com/community/forums/topic.dml?id=1118802' target='_blank'>SearchenginePreview (en)</a>."},
+	"support_bugs_text1" : { "message" : "Discusssions for Final and Beta versions can be made at my.opera.com in thread <a href='http://my.opera.com/community/forums/topic.dml?id=1118802' target='_blank'>SearchenginePreview (en)</a>."},
 	"support_bugs_text2" : { "message" : "Do not hesitate to contact me for Beta testing and <a href='http://labs.gwendragon.de/tools/opera/' target='_blank'>download Beta versions</a> of <a href='http://gwendragon.de/tools/opera/' target='_blank'>my Opera tools</a>." },
 	//
 	"setting"     : { "message" : "Settings"},
@@ -20,6 +20,7 @@
 	"thanks" : { "message": "Thanks and Kudos to" },
 	"thanks_text1" : { "message": "This Extension and the former UserJS could only be finished by the help and inspiration of many Opera users and others as to mention:" },
 	"thanks_text2" : { "message": "<ul>
+	<li>In Memoriam <a href=\"http://opera-info.de/forum/index.php?page=Thread&amp;threadID=31471\" target=\"_blank\"><i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)</a>, german founder of Opera-Info forum, translator, warmhearted person, with much knowledge about Opera, a friend. We will miss you.</li>
 	<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann for inspiring me to create UserJS for previews in many search engines</li>
 	<li>Opera Community</li>
 	<li>Nickko</li>
