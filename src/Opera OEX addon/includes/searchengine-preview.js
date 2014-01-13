@@ -1,19 +1,16 @@
 
 // ==UserScript==
 // @name            Searchengine preview
-// @author          Lilo von Hanffstengel aka GwenDragon (c) 2009
-// @version         1.3.2 Final
+// @author          Lilo von Hanffstengel aka GwenDragon
+// @version         1.4 "OpenSource" Final
 // @published       2009-09-25 10:28 CEST
-// @modified        2013-07-04 09:16 CEST
-// @copyright       (c) 2009-2013 Lilo von Hanffstengel (GwenDragon); All rights reserved
-// @license         See http://www.gwendragon.de/repo/stdlizenz.txt
-// @license         "Personal license"; free private use, but only with intact copyright headers
-// @license         Commercial use only with permission of the author
-// @restriction 	Don't upload and distribute to other websites, servers or other media
+// @modified        2014-01-13 
+// @copyright       (c) 2009-2013 Lilo von Hanffstengel (GwenDragon)
+// @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
-// @download        http://gwendragon.de/tools/opera/userjs/#searchenginepreview
-// @documentation   http://gwendragon.de/tools/opera/userjs/#searchenginepreview (german)
-// @changelog       http://gwendragon.de/repo/tools/opera/extensions/searchenginepreview-changelog.txt
+// @download        https://github.com/GwenDragon/searchenginepreview
+// @documentation   https://github.com/GwenDragon/searchenginepreview
+// @changelog       https://github.com/GwenDragon/searchenginepreview/blob/master/CHANGELOG
 // @include         *ask.com/web*
 // @include         *bing.*/search*
 // @include         *clusty.com/search*
@@ -43,7 +40,7 @@
 
 
 // CHANGELOG
-//   see text file at http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview-changelog.txt
+//   see https://github.com/GwenDragon/searchenginepreview/blob/master/CHANGELOG
 
 // KNOWN ISSUES
 // * On some searchengines the previews are not shown with activated referrer;
@@ -64,6 +61,7 @@
 // Thanks to Vercingetorix (http://opera-info.de/forum/) for hints about problems of some previews in MetaGer
 // Thanks to BigMike (http://opera-info.de/forum/) for DuckDuckGo
 // Thanks to David Sottimano (http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/) for Googles TLDs
+
 
 
 (function GwASePv1342676rt074a4711() {

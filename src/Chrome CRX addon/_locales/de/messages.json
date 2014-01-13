@@ -2,13 +2,13 @@
 	"version"      : { "message" : "Version"},
 	//
 	"licence"      : { "message" : "Lizenz"},
-	"licence_which" : { "message" : "Personal Licence"},
+	"licence_which" : { "message" : "GPLv3, OpenSource"},
 	"licence_text1" : { "message" : ", bitte Lizenz lesen."},
-	"licence_text2" : { "message" : "Alle Rechte bei "},
+	"licence_text2" : { "message" : ""},
 	//
 	"support_bugs" : { "message" : "Support und Bugs"},
-	"support_bugs_text1" : { "message" : "Diskussionen und Fragen zu Final- und Beta-Versionen können bei my.opera.com im Thread <a target=\"_blank\" href=\"http://my.opera.com/community/forums/topic.dml?id=1118802\">SearchenginePreview (en)</a> gemacht werden."},
-	"support_bugs_text2" : { "message" : "Zögern Sie nicht mich anzuschreiben, um beim Betatest mit zu machen und holen sich die <a target=\"_blank\" href=\"http://labs.gwendragon.de/tools/opera/\">Beta-Versionen</a> meiner <a  target=\"_blank\" href=\"http://gwendragon.de/tools/opera/\">Opera-Tools</a>." },
+	"support_bugs_text1" : { "message" : ""},
+	"support_bugs_text2" : { "message" : "" },
 	//
 	"setting"     : { "message" : "Einstellungen"},
 	"setting_text1" : { "message" : "Wenn Einstellungen geändert werden sollen, einfach <a href='options.html'>Einstellungen</a> öffnen."},
@@ -35,8 +35,8 @@
 </ul>"
 			},
 	//
-	"giveme" : { "message" : "Gefällts?"},
-	"giveme_text" : { "message" : "Wenn die Extension gefällt und nützlich ist, bitte <a target=\"_blank\" href=\"https://www.amazon.de/registry/wishlist/LPWDDLETEI3P/\">Gwens Amazon-Wunschliste</a> ansehen und mir etwas daraus oder einen Amazon-Gutschein schenken.<br>Danke, dass die Extension verwendet wird, es freut mich."},
+	"giveme" : { "message" : ""},
+	"giveme_text" : { "message" : ""},
 	//
 	"description2" : {
 		"message" : "SearchenginePreview zeigt in Opera+Chrome in Suchmaschinenergebnissen Vorschauen der gefundenen Websites an.",

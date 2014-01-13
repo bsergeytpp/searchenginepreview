@@ -202,4 +202,9 @@ Changelog for SearchenginePreview
     Typos in Popup content
     CRX Extension's Background process loads on demand now
 
-(c)2009-2014 by GwenDragon, All rights by GwenDragon
+2014-01-13 Version 1.4 "Free" Final // Chrome CRX, Opera OEX
+    Released as GPLv3 licence (OpenSource now)
+    Development ended for me here
+    no support for this extension any more.
+
+(c)2009-2013 by GwenDragon

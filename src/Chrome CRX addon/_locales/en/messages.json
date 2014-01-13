@@ -3,13 +3,13 @@
 	"version"      : { "message" : "Version"},
 	//
 	"licence"      : { "message" : "Licence"},
-	"licence_which" : { "message" : "Personal Licence"},
+	"licence_which" : { "message" : "GPLv3, OpenSource"},
 	"licence_text1" : { "message" : ", please read Licence."},
-	"licence_text2" : { "message" : "All rights by "},
+	"licence_text2" : { "message" : ""},
 	//
 	"support_bugs" : { "message" : "Support and Bugs"},
-	"support_bugs_text1" : { "message" : "Discusssions for Final and Beta versions can be made at my.opera.com in thread <a href='http://my.opera.com/community/forums/topic.dml?id=1118802' target='_blank'>SearchenginePreview (en)</a>."},
-	"support_bugs_text2" : { "message" : "Do not hesitate to contact me for Beta testing and <a href='http://labs.gwendragon.de/tools/opera/' target='_blank'>download Beta versions</a> of <a href='http://gwendragon.de/tools/opera/' target='_blank'>my Opera tools</a>." },
+	"support_bugs_text1" : { "message" : ""},
+	"support_bugs_text2" : { "message" : "" },
 	//
 	"setting"     : { "message" : "Settings"},
 	"setting_text1" : { "message" : "If you need to change preferences, just open link <a href='options.html'>Preferences</a>."},
@@ -36,8 +36,8 @@
 </ul>" 
 	},
 	//
-	"giveme" : { "message" : "Extension is fine?"},
-	"giveme_text" : { "message" : "If you like this extension, look into <a target=\"_blank\" href=\"https://www.amazon.de/registry/wishlist/LPWDDLETEI3P/\">Gwens Amazon wishes</a> and give me a gift or a Amazon Gift Certificate.<br>Thanks a lot for using the Extension."},
+	"giveme" : { "message" : ""},
+	"giveme_text" : { "message" : ""},
 
 	//
 	"description2" : {

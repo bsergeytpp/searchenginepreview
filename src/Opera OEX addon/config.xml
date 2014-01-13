@@ -3,9 +3,9 @@
 	xmlns="http://www.w3.org/ns/widgets" 
 	defaultlocale="en" 
 	id="http://gwendragon.de/tools/opera/userjs/#searchenginepreview" 
-	version="1.3.3">
+	version="1.4">
 	<update-description 
-		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.3.3" />
+		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4" />
 	<name>SearchenginePreview</name>
 	<description xml:lang="en">Preview of webpage in search engine's results</description>
 	<description xml:lang="de">Vorschau der Webseite in den Suchergebnissen der Suchmaschine</description>
@@ -14,7 +14,7 @@
 		href="http://gwendragon.de/" 
 		email="info@gwendragon.de">GwenDragon</author>
 	<license 
-		href="http://gwendragon.de/repo/stdlizenz.txt">Personal license; (c)2011-2099 by Lilo von Hanffstengel, GwenDragon. All rights reserved.</license>	
+		href="http://www.gnu.org/licenses/gpl.html">GPLv3</license>	
 	<icon src="icons/icon.png" height="128" width="128" />	
 	<preference name="previewpic" value="0" /> <!-- use real preview picture -->
 	<preference name="previewurl" value="1" /> <!-- use thumbs service #1 -->

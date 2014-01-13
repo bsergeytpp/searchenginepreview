@@ -19,20 +19,12 @@ Current versions are updated by Operas autoupdate feature for add-ons and fetech
 
 ##Support
 
-At Operas extensions forum at <http://my.opera.com/community/forums/topic.dml?id=1118802> or by Mail <mailto:info@gwendragon.de> (if i have spare time).
+At Operas extensions forum at <http://my.opera.com/community/forums/topic.dml?id=1118802>.
 
 ##Licence
 
-Free for personal use.
-
-See <http://gwendragon.de/repo/stdlizenz.txt> and <https://github.com/GwenDragon/searchenginepreview/blob/master/LICENSE.md>  
-Changes without notice.
+GPLv3, OpenSource, see <http://www.gnu.org/licenses/gpl-3.0.txt>  
 
 ##Author
 
-GwenDragon (Lilo von Hanffstengel), <http://gwendragon.de>
-
-##Copyright and Rights
-
-(c) 2009 by GwenDragon, All rights reserved by Lilo von Hanffstengel
-
+GwenDragon (Lilo von Hanffstengel), <http://gwendragon.de/>   

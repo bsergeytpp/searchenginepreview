@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.3.3",
+	"version" : "1.4",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
@@ -10,7 +10,7 @@
 		"url" : "http://gwendragon.de/"
 	},
 	"homepage_url" : "http://gwendragon.de/tools/opera/extensions/",
-	"update_url" : "http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.3",
+	"update_url" : "http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4",
 	//
 	"icons" : {
 		"128" : "icons/icon128.png",
