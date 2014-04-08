@@ -2,10 +2,10 @@
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4 "OpenSource" Final
+// @version         1.4.1
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-01-13 
-// @copyright       (c) 2009-2013 Lilo von Hanffstengel (GwenDragon)
+// @modified        2014-03-05
+// @copyright       (c) 2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -63,7 +63,6 @@
 // Thanks to David Sottimano (http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/) for Googles TLDs
 
 
-
 (function GwASePv1342676rt074a4711() {
 	var ENABLE_IMAGE_INSERT = 1,
 	ENABLE_PREVIEW_ICON = 0;
@@ -119,17 +118,15 @@
 	}
 
 	var isYahoo = function (href) {
-		return href.match(/http:\/\/.*search\.yahoo\.com\//i);
+		return href.match(/https?:\/\/.*search\.yahoo\.com\//i);
 	}
 
 	var isBingMSN = function (href) {
-		return href.match(/http:\/\/.*bing\.com/i);
+		return href.match(/https?:\/\/.*bing\.com/i);
 	}
 
 	var isMetager = function (href) {
-		return (
-			href.match(/http:\/\/.*metager\.de\/meta\//i) || href.match(/http:\/\/m.*\.rrzn\.uni-hannover\.de\//i)/*mg... meta...*/
-		);
+		return href.match(/https:\/\/.*metager\.de\/meta\//i);
 	}
 
 	var isGoodsearch = function (href) {
@@ -294,7 +291,7 @@
 	}
 
 	var getRealURL = function (href) {
-		if (getFullDomain(href).match(/(.*wrs|\.rds|rds)\.yahoo\.com/i)) {
+		if (getFullDomain(href).match(/(.*wrs|\.rds|rds|r)\.yahoo\.com/i)) {
 			var nhref = href.match(/\*\*.+$/);
 			if (nhref) {
 				href = unescape(nhref[0].substr(2));
@@ -393,348 +390,359 @@
 		return elem.firstChild;
 	}
 
-var thumbshots = function (url) {
-	//if (document.getElementsByTagName('head')[0].getAttribute('searchenginepreview') == 'done') return;
-	var a;
-	var t = 0;
-	var i = 0;
-	var href = null;
-	var aParent;
+	var thumbshots = function (url) {
+		//if (document.getElementsByTagName('head')[0].getAttribute('searchenginepreview') == 'done') return;
+		var a;
+		var t = 0;
+		var i = 0;
+		var href = null;
+		var aParent;
 
-	if (isYandex(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			if (a.getAttribute('class') == 'b-serp-item__title-link'
-				 && a.getAttribute('searchenginepreview') != 'done') {
-				// A wicth class b-serp-item__title-link
-				a.setAttribute('searchenginepreview', 'done');
-				href = a.href;
-				aParent = a.parentNode;
-				var p = addThumb(aParent, href);
-				p.style.display = 'inline-block';
-				p.style.clear = 'both';
-			}
-		}
-	} else if (isMetacrawler(url)) {
-		var box = document.getElementById('statbox');
-		while (s = box.getElementsByTagName('span')[i++]) {
-			if (s.getAttribute('class') == 'uschr2') {
-				var picdiv = document.createElement('p');
-				var e = s;
-				while ((e = e.nextElementSibling) && e.nodeName != 'A'
-					 && e.getAttribute('class') == 'dublaulink'
-					 && e.getAttribute('searchenginepreview') != 'done') {
-					1;
-					/* noop */
-				}
-				if (e) {
-					s.parentNode.replaceChild(picdiv, s);
-					aParent = picdiv;
-					picdiv.style.display = 'run-in';
-					e.setAttribute('searchenginepreview', 'done');
-					t++;
-					addThumb(aParent, e.href);
-				}
-
-			}
-		}
-	} else if (isYippy(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (aParent.getAttribute('class') == 'document-header'
-					 && a.firstChild.getAttribute('class') == 'title'
+		if (isYandex(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				if (a.getAttribute('class') == 'b-serp-item__title-link'
 					 && a.getAttribute('searchenginepreview') != 'done') {
+					// A wicth class b-serp-item__title-link
 					a.setAttribute('searchenginepreview', 'done');
-					t++;
+					href = a.href;
+					aParent = a.parentNode;
 					var p = addThumb(aParent, href);
-					p.style.display = 'inline';
-					aParent.parentNode.parentNode.style.listStylePosition = 'inside';
+					p.style.display = 'inline-block';
+					p.style.clear = 'both';
 				}
 			}
-		}
-	} else if (isExcite(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (aParent.parentNode.getAttribute('class') == 'websearch'
-					 && a.getAttribute('class') == 'free'
-					 && a.getAttribute('searchenginepreview') != 'done') {
-					if (a.text != null && a.text.length > 0) {
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(a, href);
+		} else if (isMetacrawler(url)) {
+			var box = document.getElementById('statbox');
+			while (s = box.getElementsByTagName('span')[i++]) {
+				if (s.getAttribute('class') == 'uschr2') {
+					var picdiv = document.createElement('p');
+					var e = s;
+					while ((e = e.nextElementSibling) && e.nodeName != 'A'
+						 && e.getAttribute('class') == 'dublaulink'
+						 && e.getAttribute('searchenginepreview') != 'done') {
+						1;
+						/* noop */
 					}
-				}
-			}
-		}
-	} else if (isForestle(url)) { // and Ecosia
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if ( aParent.parentNode.getAttribute('class') == 'result_wrapper'
-					 && a.getAttribute('class').match(/opentab/)  
-					 && a.getAttribute('searchenginepreview') != 'done') 
-				{
-					if (a.text != null && a.text.length > 0) {
-						if (href.match(/forestle\.org/)) { // fix for forestle.org
-							/* link is like http://forestle.org/goto.php?url=http%3A%2F%2Fwww.gwendragon.de%2F */
-							href = unescape(href.substr(33));
-						} else if (href.match(/ecosia\.org/)) { // fix for ecosia.org
-						}
+					if (e) {
+						s.parentNode.replaceChild(picdiv, s);
+						aParent = picdiv;
+						picdiv.style.display = 'run-in';
+						e.setAttribute('searchenginepreview', 'done');
+						t++;
+						addThumb(aParent, e.href);
+					}
 
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(aParent, href);
-					}
 				}
 			}
-		}
-	} else if (isClusty(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (aParent.getAttribute('class') == 'document-header'
-					 && a.getAttribute('searchenginepreview') != 'done') {
-					if (a.text != null && a.text.length > 0) {
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(aParent, href);
-					}
-				}
-			}
-		}
-	} else if (isGoodsearch(url)) {
-		// good search uses Frames
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (a.id.match(/link\-\d+/)
-					 && a.getArribute('class').match(/yschttl/)
-					 && a.getAttribute('searchenginepreview') != 'done') {
-					if (a.text != null && a.text.length > 0) {
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(aParent, href);
-					}
-				}
-			}
-		}				
-	} else if (isIxquick(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (a.id.match(/title_\d+/) && a.getAttribute('searchenginepreview') != 'done') {
-					if (a.text != null && a.text.length > 0) {
-						var ap = aParent.parentNode;
-						ap.style.minHeight = 82 + "px"; // parent div must have minheight of pic
-						ap.style.maxHeight = "auto";
-
-						// no target on link!
-						if (a.getAttribute('target'))
-							a.removeAttribute('target');
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(ap, href);
-					}
-				}
-			}
-		}
-	} else if (isStartpage(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (a.id.match(/title_\d+/) && a.getAttribute('searchenginepreview') != 'done') {
-					if (a.text != null && a.text.length > 0) {
-						var ap = aParent.parentNode;
-						ap.style.minHeight = 82 + "px"; // parent div must have minheight of pic
-						ap.style.maxHeight = "auto";
-
-						// no target on link!
-						if (a.getAttribute('target'))
-							a.removeAttribute('target');
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(ap, href);
-					}
-				}
-			}
-		}
-	} else if (isAsk(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if (a.id.match(/r\d+_t/) && a.getAttribute('searchenginepreview') != 'done') {
-					if (a.text != null && a.text.length > 0) {
-						a.setAttribute('searchenginepreview', 'done');
-						t++;
-						addThumb(aParent, href);
-						aParent.parentNode.style.minHeight = "100px";
-						aParent.parentNode.style.maxHeight = "auto";
-					}
-				}
-			}
-
-		}
-	} else if (isGoogle(url)) {
-		var prevA = false;
-
-		// disable in Picture search!
-		if (url.match(/http:\/\/(?:www\.)?google\.[^\/]+\/search\?.*&tbm=isch/i)) {
-			console.log("Searchengine preview disabled at Googles's picture search!");
-			t++;
-		} else {
+		} else if (isYippy(url)) {
 			while (a = document.getElementsByTagName('a')[i++]) {
 				href = a.href;
-				url = href.match(/http:\/\/(?:www\.)?google\.[^\/]+\/url\?.*&q=(http:.+)$/i);
-				if (url)
-					href = unescape(url[1]);
-
 				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
 					aParent = a.parentNode;
-					if (a.getAttribute('searchenginepreview') != 'done'
-						/* fix Google 2012-04-25 */
-						//&& a.getAttribute('class') == 'l'
-						 &&
-						(
-							(aParent.getAttribute('class') == 'r'
-								 && ((aParent.parentNode.getAttribute('class') == 'g')
-									 || (aParent.parentNode.getAttribute('class') == 'g w0')
-									 || (aParent.parentNode.getAttribute('class') == 'g w1')))
-							//
-							 || // check link (Google changed web page!)
-							aParent.getAttribute('class') == 'r'
-							//
-							 || // check link in Google custom search
-							aParent.getAttribute('class') == 'g')) {
+					if (aParent.getAttribute('class') == 'document-header'
+						 && a.firstChild.getAttribute('class') == 'title'
+						 && a.getAttribute('searchenginepreview') != 'done') {
+						a.setAttribute('searchenginepreview', 'done');
+						t++;
+						var p = addThumb(aParent, href);
+						p.style.display = 'inline';
+						aParent.parentNode.parentNode.style.listStylePosition = 'inside';
+					}
+				}
+			}
+		} else if (isExcite(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (aParent.parentNode.getAttribute('class') == 'websearch'
+						 && a.getAttribute('class') == 'free'
+						 && a.getAttribute('searchenginepreview') != 'done') {
 						if (a.text != null && a.text.length > 0) {
 							a.setAttribute('searchenginepreview', 'done');
 							t++;
-							addThumb(aParent.parentNode, href);
-
-							// fix for problems with text in wrong position (below image)
-							aParent.style.whiteSpace = 'normal';
-
-							aParent.parentNode.style.clear = 'left';
-							aParent.parentNode.style.marginLeft = '0';
-							if (t > 1 && prevA == null)
-								aParent.parentNode.style.paddingTop = '12px';
-
-							prevA = getASIN(getRealURL(href));
+							addThumb(a, href);
 						}
 					}
 				}
 			}
-			var hrs = document.getElementsByTagName('hr');
-			if (hrs != null && hrs.length > 0) {
-				hrs[0].style.clear = 'left';
-				hrs[0].style.marginTop = '35px';
+		} else if (isForestle(url)) { // and Ecosia
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (aParent.parentNode.getAttribute('class') == 'result_wrapper'
+						 && a.getAttribute('class').match(/opentab/)
+						 && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							if (href.match(/forestle\.org/)) { // fix for forestle.org
+								/* link is like http://forestle.org/goto.php?url=http%3A%2F%2Fwww.gwendragon.de%2F */
+								href = unescape(href.substr(33));
+							} else if (href.match(/ecosia\.org/)) { // fix for ecosia.org
+							}
+
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							addThumb(aParent, href);
+						}
+					}
+				}
 			}
-		}
-	} else if (isYahoo(url)) { //just com
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode;
-				if ((a.getAttribute('class') == 'yschttl'
-						 || a.getAttribute('class') == 'yschttl spt'
-						 || a.getAttribute('class') == 'rt')
+		} else if (isClusty(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (aParent.getAttribute('class') == 'document-header'
+						 && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							addThumb(aParent, href);
+						}
+					}
+				}
+			}
+		} else if (isGoodsearch(url)) {
+			// good search uses Frames
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (a.id.match(/link\-\d+/)
+						 && a.getArribute('class').match(/yschttl/)
+						 && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							addThumb(aParent, href);
+						}
+					}
+				}
+			}
+		} else if (isIxquick(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (a.id.match(/title_\d+/) && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							var ap = aParent.parentNode;
+							ap.style.minHeight = 82 + "px"; // parent div must have minheight of pic
+							ap.style.maxHeight = "auto";
+
+							// no target on link!
+							if (a.getAttribute('target'))
+								a.removeAttribute('target');
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							addThumb(ap, href);
+						}
+					}
+				}
+			}
+		} else if (isStartpage(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (a.id.match(/title_\d+/) && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							var ap = aParent.parentNode;
+							ap.style.minHeight = 82 + "px"; // parent div must have minheight of pic
+							ap.style.maxHeight = "auto";
+
+							// no target on link!
+							if (a.getAttribute('target'))
+								a.removeAttribute('target');
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							addThumb(ap, href);
+						}
+					}
+				}
+			}
+		} else if (isAsk(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if (a.id.match(/r\d+_t/) && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							addThumb(aParent, href);
+							aParent.parentNode.style.minHeight = "100px";
+							aParent.parentNode.style.maxHeight = "auto";
+						}
+					}
+				}
+
+			}
+		} else if (isGoogle(url)) {
+			var prevA = false;
+
+			// disable in Picture search!
+			if (url.match(/http:\/\/(?:www\.)?google\.[^\/]+\/search\?.*&tbm=isch/i)) {
+				console.log("Searchengine preview disabled at Googles's picture search!");
+				t++;
+			} else {
+				while (a = document.getElementsByTagName('a')[i++]) {
+					href = a.href;
+					url = href.match(/http:\/\/(?:www\.)?google\.[^\/]+\/url\?.*&q=(http:.+)$/i);
+					if (url)
+						href = unescape(url[1]);
+
+					if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+						aParent = a.parentNode;
+						if (a.getAttribute('searchenginepreview') != 'done'
+							/* fix Google 2012-04-25 */
+							//&& a.getAttribute('class') == 'l'
+							 &&
+							(
+								(aParent.getAttribute('class') == 'r'
+									 && ((aParent.parentNode.getAttribute('class') == 'g')
+										 || (aParent.parentNode.getAttribute('class') == 'g w0')
+										 || (aParent.parentNode.getAttribute('class') == 'g w1')))
+								//
+								 || // check link (Google changed web page!)
+								aParent.getAttribute('class') == 'r'
+								//
+								 || // check link in Google custom search
+								aParent.getAttribute('class') == 'g')) {
+							if (a.text != null && a.text.length > 0) {
+								a.setAttribute('searchenginepreview', 'done');
+								t++;
+								addThumb(aParent.parentNode, href);
+
+								// fix for problems with text in wrong position (below image)
+								aParent.style.whiteSpace = 'normal';
+
+								aParent.parentNode.style.clear = 'left';
+								aParent.parentNode.style.marginLeft = '0';
+								if (t > 1 && prevA == null)
+									aParent.parentNode.style.paddingTop = '12px';
+
+								prevA = getASIN(getRealURL(href));
+							}
+						}
+					}
+				}
+				var hrs = document.getElementsByTagName('hr');
+				if (hrs != null && hrs.length > 0) {
+					hrs[0].style.clear = 'left';
+					hrs[0].style.marginTop = '35px';
+				}
+				// 2014-03-05 fix bad CSS height for translate links with class .kv
+				var i = 0;
+				var divs;
+				while (divs = document.getElementsByClassName('kv')[i++]) {
+					divs.style.height = 'auto';
+				}
+
+			}
+		} else if (isYahoo(url)) { //just com
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode;
+					if ((a.getAttribute('class') == 'yschttl'
+							 || a.getAttribute('class') == 'yschttl spt'
+							 || a.getAttribute('class') == 'rt')
+						 && a.getAttribute('searchenginepreview') != 'done') {
+						if (a.text != null && a.text.length > 0) {
+							a.setAttribute('searchenginepreview', 'done');
+							t++;
+							var p = addThumb(aParent, href);
+							p.style.clear = "both";
+						}
+					}
+				}
+			}
+			head = document.getElementsByTagName('head')[0];
+			style = document.createElement('style');
+			style.setAttribute('type', 'text/css');
+			style.innerHTML = "\n#yschweb>OL>LI{height:105px;clear:both}\n";
+			style.innerHTML += "\n#west>OL>LI{height:105px;clear:both}\n";
+			head.insertBefore(style, head.lastChild);
+		} else if (isBingMSN(url)) {
+			var res = document.getElementById('results');
+			var iterator = document.evaluate(
+					"//a[starts-with(@href,'http:') or starts-with(@href,'https:')]",
+					res,
+					null,
+					window.XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
+					null);
+			var knoten,
+			l = [];
+			while (knoten = iterator.snapshotItem(i)) {
+				l[i++] = knoten;
+			}
+			i = 0;
+			while (a = l[i++]) {
+				href = a.href;
+				aParent = a.parentNode; // h3
+				if (aParent.parentNode.getAttribute('class') == 'sb_tlst'
+					 && !a.href.match(/microsofttranslator\.com/)
 					 && a.getAttribute('searchenginepreview') != 'done') {
 					if (a.text != null && a.text.length > 0) {
-						a.setAttribute('searchenginepreview', 'done');						
+						a.setAttribute('searchenginepreview', 'done');
 						t++;
-						var p = addThumb(aParent, href);
-						p.style.clear="both";
+						addThumb(aParent, href);
+					}
+				}
+			}
+		} else if (isMetager(url)) {
+			var i = 0;
+			while (d = document.getElementsByTagName('div')[i++]) {
+				if (!d.className || !d.className.match(/ergebnisbox/))
+					continue;
+
+				a = d.getElementsByTagName('a')[0];
+				if (a && a.getAttribute('searchenginepreview') != 'done') {
+					aParent = d.firstChild;
+					d.style.minHeight = '85px';
+					href = a.href;
+					if (a.text != null && a.text.length > 0) {
+						a.setAttribute('searchenginepreview', 'done');
+						if (href.match(/fastbot\.de/)) { // redirected by fastbot
+							href = href.substring(1 + href.indexOf('+'));
+						} else if (href.match(/netzsuchende\.de/)) { // redirected by Netzsuchende
+							href = href.substring(2 + href.indexOf('q='));
+						}
+						a.href = href;
+						a.style.display = "inline-block";
+						a.style.float = "left";
+						a.style.clear = "both";
+						t++;
+						addThumb(aParent, href);
+					}
+				}
+			}
+		} else if (isDuckDuckGo(url)) {
+			while (a = document.getElementsByTagName('a')[i++]) {
+				href = a.href;
+				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
+					aParent = a.parentNode.parentNode;
+					aGrandParent = a.parentNode.parentNode.parentNode;
+					if (a.getAttribute('class') == 'large' // ist ein deep link
+						 && aParent.getAttribute('class').match(/links_deep/)
+						 && !aGrandParent.getAttribute('class').match(/sponsored/) // Sponsorlinks ignorieren
+						 && a.getAttribute('searchenginepreview') != 'done') {
+						a.setAttribute('searchenginepreview', 'done');
+						t++;
+						addThumb(aGrandParent, href);
+						// fix: overlap image and div of class links_deep...
+						aParent.style.minHeight = "85px";
 					}
 				}
 			}
 		}
-		head = document.getElementsByTagName('head')[0];
-		style = document.createElement('style');
-		style.setAttribute('type', 'text/css');
-		style.innerHTML = "\n#yschweb>OL>LI{height:105px;clear:both}\n";
-		style.innerHTML += "\n#west>OL>LI{height:105px;clear:both}\n";
-		head.insertBefore(style, head.lastChild);
-	} else if (isBingMSN(url)) {
-		var res = document.getElementById('results');
-		var iterator = document.evaluate(
-				"//a[starts-with(@href,'http:') or starts-with(@href,'https:')]",
-				res,
-				null,
-				window.XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-				null);
-		var knoten,
-		l = [];
-		while (knoten = iterator.snapshotItem(i)) {
-			l[i++] = knoten;
-		}
-		i = 0;
-		while (a = l[i++]) {
-			href = a.href;
-			aParent = a.parentNode; // h3
-			if (aParent.parentNode.getAttribute('class') == 'sb_tlst'
-				 && !a.href.match(/microsofttranslator\.com/)
-				 && a.getAttribute('searchenginepreview') != 'done') {
-				if (a.text != null && a.text.length > 0) {
-					a.setAttribute('searchenginepreview', 'done');
-					t++;
-					addThumb(aParent, href);
-				}
-			}
-		}
-	} else if (isMetager(url)) {
-		var i = 0;
-		var res = document.querySelectorAll('.ergebnisbox'); 
-		while ((a = res[i++]) && i<res.length) {
-			href = a.href;
-			aParent = a;
-			if (a.getAttribute('searchenginepreview') != 'done') {
-				if (a.text != null && a.text.length > 0) {
-					if (href.match(/fastbot\.de/)) { // redirected by fastbot
-						href = href.substring(1 + href.indexOf('+'));
-					} else if (href.match(/netzsuchende\.de/)) { // redirected by Netzsuchende
-						href = href.substring(2 + href.indexOf('q='));
-					}
-					a.href = href;
-					a.style.display = "inline-block";
-					a.style.float = "left";
-					a.style.clear = "both";
-					a.setAttribute('searchenginepreview', 'done');
-					t++;
-					addThumb(aParent, href);
-				}
-			}
-		}
-	} else if (isDuckDuckGo(url)) {
-		while (a = document.getElementsByTagName('a')[i++]) {
-			href = a.href;
-			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
-				aParent = a.parentNode.parentNode;
-				aGrandParent = a.parentNode.parentNode.parentNode;
-				if (a.getAttribute('class') == 'large' // ist ein deep link
-					 && aParent.getAttribute('class').match(/links_deep/)
-					 && !aGrandParent.getAttribute('class').match(/sponsored/) // Sponsorlinks ignorieren
-					 && a.getAttribute('searchenginepreview') != 'done') {
-					a.setAttribute('searchenginepreview', 'done');					
-					t++;
-					addThumb(aGrandParent, href);
-				}
-			}
-		}
+
+		//
+		if (t > 0)
+			document.getElementsByTagName('head')[0].setAttribute('searchenginepreview', 'done');
 	}
-
-	//
-	if (t > 0)
-		document.getElementsByTagName('head')[0].setAttribute('searchenginepreview', 'done');
-}
-
 
 	var isEngine = function (href) {
 		return (isGoogle(href)
