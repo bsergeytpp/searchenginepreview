@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.4",
+	"version" : "1.4.1",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
@@ -227,10 +227,11 @@
 				"*://*.metager.de/meta/*",
 				"*://*.metacrawler.de/*",
 				"*://*.startpage.com/do/search*",
-				"http://*.search.yahoo.com/search*",
-				"http://*.search.yahoo.com/yhs/search*",
+				"*://*.search.yahoo.com/search*",
+				"*://*.search.yahoo.com/yhs/search*",
 				"http://search.yippy.com/*",
-				"http://*.yandex.ru/yandsearch*"
+				"*://*.yandex.com/yandsearch*",
+				"*://*.yandex.ru/yandsearch*"
 			],
 			"js" : ["searchengine-preview.js"],
 			"run_at" : "document_start"

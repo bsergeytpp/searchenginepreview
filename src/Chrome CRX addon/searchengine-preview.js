@@ -1,10 +1,10 @@
 
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4 "OpenSource" Final
+// @version         1.4.1 "OpenSource" Final
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-01-13 
-// @copyright       (c) 2009-2013 Lilo von Hanffstengel (GwenDragon)
+// @modified        2014-04-08 
+// @copyright       (c) 2009-2014 Lilo von Hanffstengel (GwenDragon) 
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -73,7 +73,8 @@ var isYippy = function (href) {
 }
 
 var isYandex = function (href) {
-	return (href.indexOf('yandex.ru') >= 0);
+	return (href.indexOf('yandex.ru') >= 0 
+		|| href.indexOf('yandex.com') >= 0);
 }
 
 var isGoogle = function (href) {
@@ -96,18 +97,15 @@ var isStartpage = function (href) {
 }
 
 var isYahoo = function (href) {
-	return href.match(/http:\/\/.*search\.yahoo\.com\//i);
+	return href.match(/https?:\/\/.*search\.yahoo\.com\//i);
 }
 
 var isBingMSN = function (href) {
-	return href.match(/http:\/\/.*bing\.com/i);
+	return href.match(/https?:\/\/.*bing\.com/i);
 }
 
 var isMetager = function (href) {
-	return (
-		href.match(/http:\/\/.*metager\.de\/meta\//i)
-		 || href.match(/http:\/\/m.*\.rrzn\.uni-hannover\.de\//i)/*mg... meta...*/
-	);
+	return href.match(/https?:\/\/.*metager\.de\/meta\//i);
 }
 
 var isGoodsearch = function (href) {
@@ -383,7 +381,7 @@ var thumbshots = function (url) {
 
 	if (isYandex(url)) {
 		while (a = document.getElementsByTagName('a')[i++]) {
-			if (a.getAttribute('class') == 'b-serp-item__title-link'
+			if (a.getAttribute('class').match(/b-serp-item__title-link/)
 				 && a.getAttribute('searchenginepreview') != 'done') {
 				// A wicth class b-serp-item__title-link
 				a.setAttribute('searchenginepreview', 'done');
@@ -674,28 +672,32 @@ var thumbshots = function (url) {
 			}
 		}
 	} else if (isMetager(url)) {
-		var i = 0;
-		var res = document.querySelectorAll('.ergebnisbox');
-		while ((a = res[i++]) && i < res.length) {
-			href = a.href;
-			aParent = a;
-			if (a.getAttribute('searchenginepreview') != 'done') {
-				if (a.text != null && a.text.length > 0) {
-					if (href.match(/fastbot\.de/)) { // redirected by fastbot
-						href = href.substring(1 + href.indexOf('+'));
-					} else if (href.match(/netzsuchende\.de/)) { // redirected by Netzsuchende
-						href = href.substring(2 + href.indexOf('q='));
+			var i = 0;
+			while (d = document.getElementsByTagName('div')[i++]) {
+				if (!d.className || !d.className.match(/ergebnisbox/))
+					continue;
+
+				a = d.getElementsByTagName('a')[0];
+				if (a && a.getAttribute('searchenginepreview') != 'done') {
+					aParent = d.firstChild;
+					d.style.minHeight = '85px';
+					href = a.href;
+					if (a.text != null && a.text.length > 0) {
+						a.setAttribute('searchenginepreview', 'done');
+						if (href.match(/fastbot\.de/)) { // redirected by fastbot
+							href = href.substring(1 + href.indexOf('+'));
+						} else if (href.match(/netzsuchende\.de/)) { // redirected by Netzsuchende
+							href = href.substring(2 + href.indexOf('q='));
+						}
+						a.href = href;
+						a.style.display = "inline-block";
+						a.style.float = "left";
+						a.style.clear = "both";
+						t++;
+						addThumb(aParent, href);
 					}
-					a.href = href;
-					a.style.display = "inline-block";
-					a.style.float = "left";
-					a.style.clear = "both";
-					a.setAttribute('searchenginepreview', 'done');
-					t++;
-					addThumb(aParent, href);
 				}
 			}
-		}
 	} else if (isDuckDuckGo(url)) {
 		while (a = document.getElementsByTagName('a')[i++]) {
 			href = a.href;
@@ -709,6 +711,8 @@ var thumbshots = function (url) {
 					a.setAttribute('searchenginepreview', 'done');
 					t++;
 					addThumb(aGrandParent, href);
+					// fix: overlap image and div of class links_deep...
+					aParent.style.minHeight = "85px";
 				}
 			}
 		}

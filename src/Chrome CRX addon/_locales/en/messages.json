@@ -20,7 +20,7 @@
 	"thanks" : { "message": "Thanks and Kudos to" },
 	"thanks_text1" : { "message": "This Extension and the former UserJS could only be finished by the help and inspiration of many Opera users and others as to mention:" },
 	"thanks_text2" : { "message": "<ul>
-	<li>In Memoriam <a href=\"http://opera-info.de/forum/index.php?page=Thread&amp;threadID=31471\" target=\"_blank\"><i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)</a>, german founder of Opera-Info forum, translator, warmhearted person, with much knowledge about Opera, a friend. We will miss you.</li>
+	<li>In Memoriam <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014), german founder of Opera-Info forum, translator, warmhearted person, with much knowledge about Opera, a friend. We will miss you.</li>
 	<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann for inspiring me to create UserJS for previews in many search engines</li>
 	<li>Opera Community</li>
 	<li>Nickko</li>
