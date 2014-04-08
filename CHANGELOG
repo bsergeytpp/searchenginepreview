@@ -203,8 +203,13 @@ Changelog for SearchenginePreview
     
 2014-01-13 Version 1.4 "Free" Final // Chrome CRX, Opera OEX
     Released as GPLv3 licence (OpenSource now)
-	Stopped development of extension
-	No support any more
 
+2014-04-08 Version 1.4.1 // Chrome CRX, Opera OEX
+    Fix: Google translate link
+    Fix: Duckduckgo
+    Fix: Yandex overlap image and div 
+    Fix: Yandex.ru, Yandex.com website changes 
+    Fix: Metager new website
+    Fix: https for Yahoo, Bing
 
-(c)2009-2013 by GwenDragon
+(c)2009-2014 by GwenDragon
