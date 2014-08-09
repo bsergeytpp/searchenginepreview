@@ -2,9 +2,9 @@
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.1
+// @version         1.4.3
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-03-05
+// @modified        2014-08-09
 // @copyright       (c) 2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
@@ -201,13 +201,17 @@
 
 		var preview;
 		switch (thumbService) {
-		case "0":
-			preview = 'http://api.thumbalizr.com/?url=' + site + '&width=120'; // thumbalizr is very slow; not rellay usable!
-			break;
-		case "1":
-		default:
-			preview = 'http://immediatenet.com/t/m?Size=1024x768&URL=' + site;
-			break;
+            case "2":		
+                preview = 'http://immediatenet.com/t/m?Size=1024x768&URL=' + site; // Service may be closed in near future!
+                break;            
+            case "0":
+                preview = 'http://api.thumbalizr.com/?url=' + site + '&width=120'; // thumbalizr is very slow; not rellay usable!
+                break;
+            case "1": 
+            default:
+                //http://api.webthumbnail.org?width=500&height=400&screen=1024&url=http://gwendragon.de/blog/
+                preview = 'http://api.webthumbnail.org?url=' + site + '&height=100&width=120&screen=1024';
+                break;
 		}
 
 		if (!isAmazon(href))

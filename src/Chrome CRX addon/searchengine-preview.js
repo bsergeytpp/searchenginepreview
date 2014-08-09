@@ -1,9 +1,9 @@
 
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.1 "OpenSource" Final
+// @version         1.4.3 "OpenSource" Final
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-04-08 
+// @modified        2014-08-09 
 // @copyright       (c) 2009-2014 Lilo von Hanffstengel (GwenDragon) 
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
@@ -36,6 +36,7 @@
 /////////////////////////////////////////////////////////////////////////////////////
 var thumbServiceUrl = [
 	'http://api.thumbalizr.com/?width=120&url=',
+    'http://api.webthumbnail.org?width=120&height=100&screen=1024&url=',
 	'http://immediatenet.com/t/m?Size=1024x768&URL='
 ];
 /////////////////////////////////////////////////////////////////////////////////////
@@ -182,6 +183,9 @@ var getImageURL = function (href, psiz) {
 	switch (thumbService) {
 	case '0':
 		preview = thumbServiceUrl[0] + site;
+		break;
+    case '2':
+		preview = thumbServiceUrl[2] + site;
 		break;
 	case '1':
 	default:

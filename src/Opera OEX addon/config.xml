@@ -3,9 +3,9 @@
 	xmlns="http://www.w3.org/ns/widgets" 
 	defaultlocale="en" 
 	id="http://gwendragon.de/tools/opera/userjs/#searchenginepreview" 
-	version="1.4.1">
+	version="1.4.3">
 	<update-description 
-		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4.1" />
+		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4" />
 	<name>SearchenginePreview</name>
 	<description xml:lang="en">Preview of webpage in search engine's results</description>
 	<description xml:lang="de">Vorschau der Webseite in den Suchergebnissen der Suchmaschine</description>

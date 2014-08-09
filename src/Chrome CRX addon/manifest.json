@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.4.2",
+	"version" : "1.4.3",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
