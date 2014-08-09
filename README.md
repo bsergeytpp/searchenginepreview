@@ -24,7 +24,7 @@ Bugs can be reported at <https://github.com/GwenDragon/searchenginepreview/issue
 Some personal help you may find on my technical blog at <http://labs.gwendragon.de/blog/Web/Browser/Opera/Extension/>. You can ask in comments section of the extensions blog article.  
 Less prefered is the contact by e-mail at <info@gwendragon.de>, which may be answered next day or later, if i have enough time.
 
-##Licence
+##License
 
 GPLv3, OpenSource, see <http://www.gnu.org/licenses/gpl-3.0.html>  
 
