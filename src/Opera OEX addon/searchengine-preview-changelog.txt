@@ -195,7 +195,6 @@ Changelog for SearchenginePreview
 2013-07-04 Version 1.3.2 Final // Opera OEX, Chrome CRX
     Added international Google TLDs (thanks to http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/)
 
-
 2014-01-08 Version 1.3.3 "Kawime" Final // Chrome CRX, Opera OEX
     In Memoriam of Karsten "kawime" Mehrhoff, founder of german Opera-Info forum, Opera translator
     Removed links to opera-info.de
@@ -220,6 +219,10 @@ Changelog for SearchenginePreview
     Updated: link to GPL licence
     Added: new thumbnail service
 
-
+2014-08-18 Version 1.4.4
+    Updated: popup for en,de,fr lang
+    Fix: Yippy.com
+    Fix: Yandex.ru and Yandex.com
+    Fix: DuckDuckGo
 
 (c)2009-2014 by GwenDragon

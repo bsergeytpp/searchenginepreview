@@ -2,10 +2,10 @@
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.3
+// @version         1.4.4
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-08-09
-// @copyright       (c) 2009-now Lilo von Hanffstengel (GwenDragon)
+// @modified        2014-08-18 16:02 CEST
+// @copyright       (c)2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -33,8 +33,9 @@
 // @include         http://search.msn.*/results*
 // @include         *startpage.com/do/search*
 // @include         *search.yahoo.*/search*
-// @include         http://search.yippy.com/*
+// @include         *yippy.com/search*
 // @include         *yandex.ru/yandsearch*
+// @include         *yandex.com/yandsearch*
 // @include         *zotspot.*/search/*
 // ==/UserScript==
 
@@ -50,7 +51,7 @@
 
 // THANKSGIVING
 // Script inspired by many authors
-// Thanks to Edward Ackroyd (C) 2006 http://ackroyd.de/googlepreview/
+// Thanks to Edward Ackroyd (c)2006 http://ackroyd.de/googlepreview/
 // Thanks to Oliver Roth (from http://erweiterungen.de) for creating the first localizable version with German and English
 // Thanks to Carlo Zottmann for inspiring to improve GooglePreview
 // Thanks to Nickko (http://my.opera.com/community/forums/topic.dml?id=257506)
@@ -61,6 +62,8 @@
 // Thanks to Vercingetorix (http://opera-info.de/forum/) for hints about problems of some previews in MetaGer
 // Thanks to BigMike (http://opera-info.de/forum/) for DuckDuckGo
 // Thanks to David Sottimano (http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/) for Googles TLDs
+// Thanks to Karsten "kawime" Mehrhoff (†2014) (http://opera-info.de/)
+// Thanks to all beta testers
 
 
 (function GwASePv1342676rt074a4711() {
@@ -94,11 +97,13 @@
 	}
 
 	var isYippy = function (href) {
-		return (href.indexOf('search.yippy.') >= 0);
+		return (href.indexOf('yippy.com/search') >= 0);
 	}
 
 	var isYandex = function (href) {
-		return (href.indexOf('yandex.ru/yandsearch') >= 0);
+		return (
+			href.indexOf('yandex.ru/yandsearch') >= 0
+			 || href.indexOf('yandex.com/yandsearch') >= 0);
 	}
 
 	var isGoogle = function (href) {
@@ -201,17 +206,17 @@
 
 		var preview;
 		switch (thumbService) {
-            case "2":		
-                preview = 'http://immediatenet.com/t/m?Size=1024x768&URL=' + site; // Service may be closed in near future!
-                break;            
-            case "0":
-                preview = 'http://api.thumbalizr.com/?url=' + site + '&width=120'; // thumbalizr is very slow; not rellay usable!
-                break;
-            case "1": 
-            default:
-                //http://api.webthumbnail.org?width=500&height=400&screen=1024&url=http://gwendragon.de/blog/
-                preview = 'http://api.webthumbnail.org?url=' + site + '&height=100&width=120&screen=1024';
-                break;
+		case "2":
+			preview = 'http://immediatenet.com/t/m?Size=1024x768&URL=' + site; // Service may be closed in near future!
+			break;
+		case "0":
+			preview = 'http://api.thumbalizr.com/?width=120&url=' + site; // thumbalizr is very slow; not rellay usable!
+			break;
+		case "1":
+		default:
+			//http://api.webthumbnail.org?width=500&height=400&screen=1024&url=http://gwendragon.de/blog/
+			preview = 'http://api.webthumbnail.org?height=95&width=110&screen=1024&url=' + site;
+			break;
 		}
 
 		if (!isAmazon(href))
@@ -404,9 +409,9 @@
 
 		if (isYandex(url)) {
 			while (a = document.getElementsByTagName('a')[i++]) {
-				if (a.getAttribute('class') == 'b-serp-item__title-link'
+				if (a.getAttribute('class')
+					 && a.getAttribute('class').match(/serp-item__title-link/)
 					 && a.getAttribute('searchenginepreview') != 'done') {
-					// A wicth class b-serp-item__title-link
 					a.setAttribute('searchenginepreview', 'done');
 					href = a.href;
 					aParent = a.parentNode;
@@ -729,14 +734,11 @@
 				if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
 					aParent = a.parentNode.parentNode;
 					aGrandParent = a.parentNode.parentNode.parentNode;
-					if (a.getAttribute('class') == 'large' // ist ein deep link
-						 && aParent.getAttribute('class').match(/links_deep/)
-						 && !aGrandParent.getAttribute('class').match(/sponsored/) // Sponsorlinks ignorieren
+					if (a.getAttribute('class') == 'result__a' // ist ein deep link
 						 && a.getAttribute('searchenginepreview') != 'done') {
 						a.setAttribute('searchenginepreview', 'done');
 						t++;
 						addThumb(aGrandParent, href);
-						// fix: overlap image and div of class links_deep...
 						aParent.style.minHeight = "85px";
 					}
 				}
