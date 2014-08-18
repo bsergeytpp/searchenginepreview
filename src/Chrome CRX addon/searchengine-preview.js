@@ -1,10 +1,10 @@
 
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.3 "OpenSource" Final
+// @version         1.4.4
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-08-09 
-// @copyright       (c) 2009-2014 Lilo von Hanffstengel (GwenDragon) 
+// @modified        2014-08-18
+// @copyright       (c)2009-2014 Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -22,7 +22,7 @@
 
 // THANKSGIVING
 // Script inspired by many authors
-// Thanks to Edward Ackroyd (C) 2006 http://ackroyd.de/googlepreview/
+// Thanks to Edward Ackroyd (c)2006 http://ackroyd.de/googlepreview/
 // Thanks to Oliver Roth (from http://erweiterungen.de) for creating the first localizable version with German and English
 // Thanks to Carlo Zottmann for inspiring to improve GooglePreview
 // Thanks to Nickko (http://my.opera.com/community/forums/topic.dml?id=257506)
@@ -32,11 +32,14 @@
 // Thanks to Furba, dapxin and others for hint about oAutoPagerize and other pager scripts
 // Thanks to Vercingetorix (http://opera-info.de/forum/) for hints about problems of some previews in MetaGer
 // Thanks to BigMike (http://opera-info.de/forum/) for DuckDuckGo
+// Thanks to David Sottimano (http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/) for Googles TLDs
+// Thanks to Karsten "kawime" Mehrhoff (†2014) (http://opera-info.de/)
+// Thanks to all beta testers
 
 /////////////////////////////////////////////////////////////////////////////////////
 var thumbServiceUrl = [
 	'http://api.thumbalizr.com/?width=120&url=',
-    'http://api.webthumbnail.org?width=120&height=100&screen=1024&url=',
+	'http://api.webthumbnail.org?width=120&height=100&screen=1024&url=',
 	'http://immediatenet.com/t/m?Size=1024x768&URL='
 ];
 /////////////////////////////////////////////////////////////////////////////////////
@@ -70,12 +73,12 @@ var isAmazon = function (href) {
 }
 
 var isYippy = function (href) {
-	return (href.indexOf('search.yippy.') >= 0);
+	return (href.indexOf('yippy.com/search') >= 0);
 }
 
 var isYandex = function (href) {
-	return (href.indexOf('yandex.ru') >= 0 
-		|| href.indexOf('yandex.com') >= 0);
+	return (href.indexOf('yandex.ru') >= 0
+		 || href.indexOf('yandex.com') >= 0);
 }
 
 var isGoogle = function (href) {
@@ -184,7 +187,7 @@ var getImageURL = function (href, psiz) {
 	case '0':
 		preview = thumbServiceUrl[0] + site;
 		break;
-    case '2':
+	case '2':
 		preview = thumbServiceUrl[2] + site;
 		break;
 	case '1':
@@ -385,9 +388,9 @@ var thumbshots = function (url) {
 
 	if (isYandex(url)) {
 		while (a = document.getElementsByTagName('a')[i++]) {
-			if (a.getAttribute('class').match(/b-serp-item__title-link/)
+			if (a.getAttribute('class')
+				 && a.getAttribute('class').match(/serp-item__title-link/)
 				 && a.getAttribute('searchenginepreview') != 'done') {
-				// A wicth class b-serp-item__title-link
 				a.setAttribute('searchenginepreview', 'done');
 				href = a.href;
 				aParent = a.parentNode;
@@ -440,17 +443,13 @@ var thumbshots = function (url) {
 			href = a.href;
 			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
 				aParent = a.parentNode;
-				if (aParent.parentNode.getAttribute('class')
-					 && aParent.parentNode.getAttribute('class').match(/searchResult/)
-					 && a.getAttribute('class')
-					 && a.getAttribute('class').match(/resultTitle/)
+				if (aParent.parentNode.getAttribute('class') == 'websearch'
+					 && a.getAttribute('class') == 'free'
 					 && a.getAttribute('searchenginepreview') != 'done') {
 					if (a.text != null && a.text.length > 0) {
 						a.setAttribute('searchenginepreview', 'done');
 						t++;
-						var hrefs = href.match(/ru=([^&]+)/);
-						hrefs = decodeURIComponent(hrefs[1]);
-						addThumb(aParent, hrefs);
+						addThumb(a, href);
 					}
 				}
 			}
@@ -494,8 +493,7 @@ var thumbshots = function (url) {
 		}
 	} else if (isGoodsearch(url)) {
 		// good search uses Frames
-		var fr = document.getElementById("yhs-if");
-		while (fr && (a = fr.document.getElementsByTagName('a')[i++])) {
+		while (a = document.getElementsByTagName('a')[i++]) {
 			href = a.href;
 			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
 				aParent = a.parentNode;
@@ -623,6 +621,13 @@ var thumbshots = function (url) {
 				hrs[0].style.clear = 'left';
 				hrs[0].style.marginTop = '35px';
 			}
+			// 2014-03-05 fix bad CSS height for translate links with class .kv
+			var i = 0;
+			var divs;
+			while (divs = document.getElementsByClassName('kv')[i++]) {
+				divs.style.height = 'auto';
+			}
+
 		}
 	} else if (isYahoo(url)) { //just com
 		while (a = document.getElementsByTagName('a')[i++]) {
@@ -676,46 +681,43 @@ var thumbshots = function (url) {
 			}
 		}
 	} else if (isMetager(url)) {
-			var i = 0;
-			while (d = document.getElementsByTagName('div')[i++]) {
-				if (!d.className || !d.className.match(/ergebnisbox/))
-					continue;
+		var i = 0;
+		while (d = document.getElementsByTagName('div')[i++]) {
+			if (!d.className || !d.className.match(/ergebnisbox/))
+				continue;
 
-				a = d.getElementsByTagName('a')[0];
-				if (a && a.getAttribute('searchenginepreview') != 'done') {
-					aParent = d.firstChild;
-					d.style.minHeight = '85px';
-					href = a.href;
-					if (a.text != null && a.text.length > 0) {
-						a.setAttribute('searchenginepreview', 'done');
-						if (href.match(/fastbot\.de/)) { // redirected by fastbot
-							href = href.substring(1 + href.indexOf('+'));
-						} else if (href.match(/netzsuchende\.de/)) { // redirected by Netzsuchende
-							href = href.substring(2 + href.indexOf('q='));
-						}
-						a.href = href;
-						a.style.display = "inline-block";
-						a.style.float = "left";
-						a.style.clear = "both";
-						t++;
-						addThumb(aParent, href);
+			a = d.getElementsByTagName('a')[0];
+			if (a && a.getAttribute('searchenginepreview') != 'done') {
+				aParent = d.firstChild;
+				d.style.minHeight = '85px';
+				href = a.href;
+				if (a.text != null && a.text.length > 0) {
+					a.setAttribute('searchenginepreview', 'done');
+					if (href.match(/fastbot\.de/)) { // redirected by fastbot
+						href = href.substring(1 + href.indexOf('+'));
+					} else if (href.match(/netzsuchende\.de/)) { // redirected by Netzsuchende
+						href = href.substring(2 + href.indexOf('q='));
 					}
+					a.href = href;
+					a.style.display = "inline-block";
+					a.style.float = "left";
+					a.style.clear = "both";
+					t++;
+					addThumb(aParent, href);
 				}
 			}
+		}
 	} else if (isDuckDuckGo(url)) {
 		while (a = document.getElementsByTagName('a')[i++]) {
 			href = a.href;
 			if (href.indexOf('http://') == 0 || href.indexOf('https://') == 0) {
 				aParent = a.parentNode.parentNode;
 				aGrandParent = a.parentNode.parentNode.parentNode;
-				if (a.getAttribute('class') == 'large' // ist ein deep link
-					 && aParent.getAttribute('class').match(/links_deep/)
-					 && !aGrandParent.getAttribute('class').match(/sponsored/) // Sponsorlinks ignorieren
+				if (a.getAttribute('class') == 'result__a' // ist ein deep link
 					 && a.getAttribute('searchenginepreview') != 'done') {
 					a.setAttribute('searchenginepreview', 'done');
 					t++;
 					addThumb(aGrandParent, href);
-					// fix: overlap image and div of class links_deep...
 					aParent.style.minHeight = "85px";
 				}
 			}

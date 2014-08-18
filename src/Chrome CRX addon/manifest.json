@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.4.3",
+	"version" : "1.4.4",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
@@ -23,11 +23,10 @@
 	//
 	"background" : {
 		"page" : "background.html",
-		 "persistent": false
+		"persistent" : false
 	},
 	//
-	"content_scripts" : [
-		{
+	"content_scripts" : [{
 			"matches" : [
 				"*://*.ask.com/web*",
 				"*://*.bing.com/search*",
@@ -229,14 +228,13 @@
 				"*://*.startpage.com/do/search*",
 				"*://*.search.yahoo.com/search*",
 				"*://*.search.yahoo.com/yhs/search*",
-				"http://search.yippy.com/*",
+				"http://*.yippy.com/search*",
 				"*://*.yandex.com/yandsearch*",
 				"*://*.yandex.ru/yandsearch*"
 			],
 			"js" : ["searchengine-preview.js"],
 			"run_at" : "document_start"
-		},
-		{
+		}, {
 			"matches" : ["http://*.goodsearch.com/search-web*", "http://*.search.yahoo.com/yhs/search*"],
 			"js" : ["searchengine-preview.js"],
 			"run_at" : "document_start",
