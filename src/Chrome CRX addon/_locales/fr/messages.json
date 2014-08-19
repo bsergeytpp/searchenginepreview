@@ -1,0 +1,128 @@
+{
+	////////////////////////////////////////////////////////////////////////////////
+	// Pardonnez moi cette mauvais traduction. Je suis une femme allemande et je ne
+	// parle pas la langue francais tous le temps.
+	// Peut-être vous voulez aidez moi traduiser cette extension en francais ou
+	// autres langues?
+	// Merci. ;)
+	// Amitiés
+	//   GwenDragon
+	//   <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	////////////////////////////////////////////////////////////////////////////////
+	//
+	"version" : {
+		"message" : "Version"
+	},
+	//
+	"licence" : {
+		"message" : "Licence"
+	},
+	"licence_which" : {
+		"message" : "GPLv3, OpenSource"
+	},
+	"licence_text1" : {
+		"message" : ", lisez la licence, s'il vous plait."
+	},
+	"licence_text2" : {
+		"message" : ""
+	},
+	//
+	"support_bugs" : {
+		"message" : "Support technique"
+	},
+	"support_bugs_text1" : {
+		"message" : "Support et questionnes sont fait par moi en blog"
+	},
+	"support_bugs_text2" : {
+		"message" : "Reportez les erreurs en blog dans la section commentaires ou par bugtracker"
+	},
+	//
+	"setting" : {
+		"message" : "Préférences"
+	},
+	"setting_text1" : {
+		"message" : "Pour changer préférences, clickez <a href='options.html'>Préférences</a>, s'il vous plait."
+	},
+	//
+	"changes" : {
+		"message" : "Changements"
+	},
+	"changes_text1" : {
+		"message" : "Lisez le <a href='searchengine-preview-changelog.txt'>changelog</a>, s'il vous plait."
+	},
+	//
+	"thanks" : {
+		"message" : "Remerciements"
+	},
+	"thanks_text1" : {
+		"message" : "Cette Opera extension et les précédentes scriptes UserJS sont développer et finir avec l'aide et inspiration des Opera internautes."
+	},
+	"thanks_text2" : {
+		"message" : "<ul>
+		<li>En mémoire de <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)<br>fondateur de forum Opera-Info-Forum, traducteur, personne chaleureux et omnisciente savoir du navigateur Opera, un ami.
+		<br>Tu nous manqueons.</li>
+		<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann pour inspirez moi en developez mes précédentes scriptes de UserJS</li>
+		<li>Opera Community</li>
+		<li>Nickko</li>
+		<li>Alexs reporte les erreurs et propose des outils de recherche google mac, ask, ixquick</li>
+		<li>RocknRolf propose des outils de recherche google-linux</li>
+		<li>Heidrun propose des outils de recherche clusty, yippy, metacrawler.de</li>
+		<li>Furba, dapxin et autres reportes des erreurs avec extension oAutoPagerize et autres scriptes de UserJS</li>
+		<li>Vercingetorix reporte problems avec outils de recherche MetaGer</li>
+		<li>BigMike propose outil de recherche DuckDuckGo</li>
+		<li>David Sottimano pour une liste des domaines Google</li>
+		<li>et autres bêta-testeurs!</li>
+		<li>Et mercis a <a target=\"_blank\" href=\"http://www.opera.com/\">Opera ASA</a>, la mère de navigateur Opera!</li>
+		<li>Et mercis aux services de thumbnail
+		 <a target=\"_blank\" href=\"http://webthumbnail.org/\">webthumbnail.org</a>,
+		 <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>,
+		 <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a>
+		</li>
+		</ul>"
+	},
+	//
+	"giveme" : {
+		"message" : ""
+	},
+	"giveme_text" : {
+		"message" : ""
+	},
+
+	//
+	"description2" : {
+		"description" : "Description d'Extension",
+		"message" : "Une extension pour navigateur Opera et les Chromium, qui montre miniatures des sites web dans les resultats des outils de recherche."
+	},
+	"options_title" : {
+		"description" : "Title de page Préférences",
+		"message" : "Préférences d'Extension"
+	},
+	"options_for" : {
+		"description" : "Préférences pour Extension",
+		"message" : "Préférences pour extension"
+	},
+	"options_preview_as" : {
+		"description" : "text for option preview",
+		"message" : "Apercu "
+	},
+	"options_preview_pic" : {
+		"description" : "option pic",
+		"message" : "Miniature"
+	},
+	"options_preview_iconhover" : {
+		"description" : "option hovericon",
+		"message" : "Icône"
+	},
+	"options_preview_url" : {
+		"message" : "Créer miniature de page web avec service"
+	},
+	"options_preview_savebutton" : {
+		"message" : "Enregistre Préférences"
+	},
+	"options_preview_reloadadvice" : {
+		"message" : "Après enregistrer des préférences, recharge l'extension touche F5."
+	},
+	"options_programmedby" : {
+		"message" : "programmez par "
+	}
+}

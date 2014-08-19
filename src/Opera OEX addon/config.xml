@@ -3,7 +3,7 @@
 	xmlns="http://www.w3.org/ns/widgets" 
 	defaultlocale="en" 
 	id="http://gwendragon.de/tools/opera/userjs/#searchenginepreview" 
-	version="1.4.4">
+	version="1.4.5">
 	<update-description 
 		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4" />
 	<name>SearchenginePreview</name>

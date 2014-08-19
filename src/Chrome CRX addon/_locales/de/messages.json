@@ -1,81 +1,125 @@
 {
-	"version"      : { "message" : "Version"},
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	// Entschuldigung für den nicht immer fehlerlosen Text und die Übersetzungen.
+	// Ich bin keine technische Redakteurin oder Fachfrau für technische Dokumentation.
+	// Bei Hilfe und Verbeserungen einfach mir melden.
+	// Damit sich der Text verbessern kann. ;)
+	// Danke.
 	//
-	"licence"      : { "message" : "Lizenz"},
-	"licence_which" : { "message" : "GPLv3, OpenSource"},
-	"licence_text1" : { "message" : ", bitte Lizenz lesen."},
-	"licence_text2" : { "message" : ""},
+	// Grüße GwenDragon
+	// <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	////////////////////////////////////////////////////////////////////////////////////////////////////
 	//
-	"support_bugs" : { "message" : "Support und Bugs"},
-	"support_bugs_text1" : { "message" : ""},
-	"support_bugs_text2" : { "message" : "" },
-	//
-	"setting"     : { "message" : "Einstellungen"},
-	"setting_text1" : { "message" : "Wenn Einstellungen geändert werden sollen, einfach <a href='options.html'>Einstellungen</a> öffnen."},
-	//
-	"changes" : { "message": "Änderungen" },
-	"changes_text1" : { "message": "Bitte das <a href='searchengine-preview-changelog.txt'>Changelog</a> lesen." },
-	//
-	"thanks" : { "message": "Danksagungen und Erwähnungen" },
-	"thanks_text1" : { "message": "Diese Extension und dessen Vorgänger als UserJS konnten nur durch die Hilfe und Inspiration vieler Opera-Nutzer und anderer vollendet werden. Als da folgende zu erwähnen wären:" },
-	"thanks_text2" : { "message": "<ul>
-<li>In Erinnerung an <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)<br>Vater des deutschen Opera-Info-Forum, Übersetzer, warmherzige Person, mit kompentem Jahrzehnte reichenden Wissen über den Opera Browser, ein Freund. <br>Wir werden dich vermissen.</li>
-<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann, die mich zum UserJS für Vorschauen in vielen Suchmaschinen inspirierten</li>
-<li>Opera Community</li>
-<li>Nickko</li>
-<li>Alexs für Bug-Reports und neue Suchmaschinenlinks: google mac, ask, ixquick</li>
-<li>RocknRolf für Suchmaschine: google-linux</li>
-<li>Heidrun für Suchmaschinen: clusty, yippy, metacrawler.de</li>
-<li>Furba, dapxin und andere für: Hinweise zu Problemen mit oAutoPagerize und anderen Pager-Javascripten</li>
-<li>Vercingetorix für: Hinweise zu Problemen mancher Vorschauen in MetaGer</li>
-<li>BigMike für: DuckDuckGo</li>
-<li>and viele andere Tester.</li>
-<li>Ganz besonderen Dank an <a target=\"_blank\" href=\"http://www.opera.com/\">Opera ASA</a> als Mutter des Opera Browsers!</li>
-<li>und besonderen Dank an freie Thumbnail-Dienste bei <a href=\"http://webthumbnail.org/\">webthumbnail.org</a>,  <a href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>, <a href=\"http://immediatenet.com/\">immediatenet.com</a></li>
-</ul>"
-			},
-	//
-	"giveme" : { "message" : ""},
-	"giveme_text" : { "message" : ""},
-	//
-	"description2" : {
-		"message" : "SearchenginePreview zeigt in Opera+Chrome in Suchmaschinenergebnissen Vorschauen der gefundenen Websites an.",
-		"description": "Description of extension"
+	"version" : {
+		"message" : "Version"
 	},
 	//
-   "options_title": {
-      "message": "Einstellungen der Extension SearchenginePreview",
-	  "description": "title of options page"
-   },
-   "options_for": {
-		"message": "Einstellungen für SearchenginePreview",
-		"description": "Settings for NAMEOFEXTENSION"
-   },
-    "options_preview_as": {
-		"description": "text for option preview",
-		"message": "Vorschau mit "
-   },
-   "options_preview_pic": {
-		"description": "option pic",
-		"message": "Bild"
-   },
-   "options_preview_iconhover": {
-		"description": "Text option hovericon",
-		"message": "Icon mit Hovereffekt"
-   },
-   "options_preview_url" : {
+	"licence" : {
+		"message" : "Lizenz"
+	},
+	"licence_which" : {
+		"message" : "GPLv3, OpenSource"
+	},
+	"licence_text1" : {
+		"message" : ", bitte Lizenz lesen."
+	},
+	"licence_text2" : {
+		"message" : ""
+	},
+	//
+	"support_bugs" : {
+		"message" : "Support und Bugs"
+	},
+	"support_bugs_text1" : {
+		"message" : "Für Support und Hilfe bitte in meinem Blog"
+	},
+	"support_bugs_text2" : {
+		"message" : "Fehler und Probleme berichten bitte im Kommentarbereich meines Blogs in den jweiligen Artikeln zur Extension oder im Bugtracker"
+	},
+	//
+	"setting" : {
+		"message" : "Einstellungen"
+	},
+	"setting_text1" : {
+		"message" : "Wenn Einstellungen geändert werden sollen, einfach <a href='options.html'>Einstellungen</a> öffnen."
+	},
+	//
+	"changes" : {
+		"message" : "Änderungen"
+	},
+	"changes_text1" : {
+		"message" : "Bitte das <a href='searchengine-preview-changelog.txt'>Changelog</a> lesen."
+	},
+	//
+	"thanks" : {
+		"message" : "Danksagungen und Erwähnungen"
+	},
+	"thanks_text1" : {
+		"message" : "Diese Extension und dessen Vorgänger als UserJS konnten nur durch die Hilfe und Inspiration vieler Opera-Nutzer und anderer vollendet werden. Als da folgende zu erwähnen wären:"
+	},
+	"thanks_text2" : {
+		"message" : "<ul>
+		<li>In Erinnerung an <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)<br>Vater des deutschen Opera-Info-Forum, Übersetzer, warmherzige Person, mit kompentem Jahrzehnte reichenden Wissen über den Opera Browser, ein Freund. <br>Wir werden dich vermissen.</li>
+		<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann, die mich zum UserJS für Vorschauen in vielen Suchmaschinen inspirierten</li>
+		<li>Opera Community</li>
+		<li>Nickko</li>
+		<li>Alexs für Bug-Reports und neue Suchmaschinenlinks: google mac, ask, ixquick</li>
+		<li>RocknRolf für Suchmaschine: google-linux</li>
+		<li>Heidrun für Suchmaschinen: clusty, yippy, metacrawler.de</li>
+		<li>Furba, dapxin und andere für: Hinweise zu Problemen mit oAutoPagerize und anderen Pager-Javascripten</li>
+		<li>Vercingetorix für: Hinweise zu Problemen mancher Vorschauen in MetaGer</li>
+		<li>BigMike für: DuckDuckGo</li>
+		<li>and viele andere Tester.</li>
+		<li>Ganz besonderen Dank an <a target=\"_blank\" href=\"http://www.opera.com/\">Opera ASA</a> als Mutter des Opera Browsers!</li>
+		<li>und besonderen Dank an freie Thumbnail-Dienste bei <a target=\"_blank\" href=\"http://webthumbnail.org/\">webthumbnail.org</a>,  <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>, <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a></li>
+		</ul>"
+	},
+	//
+	"giveme" : {
+		"message" : ""
+	},
+	"giveme_text" : {
+		"message" : ""
+	},
+	//
+	"description2" : {
+		"message" : "SearchenginePreview zeigt in Opera und Chromium-Browsern in Suchmaschinenergebnissen Vorschauen der gefundenen Websites an.",
+		"description" : "Description of extension"
+	},
+	//
+	"options_title" : {
+		"message" : "Einstellungen der Extension SearchenginePreview",
+		"description" : "title of options page"
+	},
+	"options_for" : {
+		"message" : "Einstellungen für SearchenginePreview",
+		"description" : "Settings for NAMEOFEXTENSION"
+	},
+	"options_preview_as" : {
+		"description" : "text for option preview",
+		"message" : "Vorschau mit "
+	},
+	"options_preview_pic" : {
+		"description" : "option pic",
+		"message" : "Bild"
+	},
+	"options_preview_iconhover" : {
+		"description" : "Text option hovericon",
+		"message" : "Icon mit Hovereffekt"
+	},
+	"options_preview_url" : {
 		"message" : "Thumbnails der Website erstellen mit Dienst "
-   },
-   "options_preview_showbutton" : {
+	},
+	"options_preview_showbutton" : {
 		"message" : "Extension-Button einblenden "
-   },
-   "options_preview_savebutton" : {
+	},
+	"options_preview_savebutton" : {
 		"message" : "Einstellungen speichern"
-   },
-   "options_preview_reloadadvice" : {
+	},
+	"options_preview_reloadadvice" : {
 		"message" : "Nach Speichern der Einstellungen bitte F5 auf der Webseite drücken, um neu zu laden."
-   },
-   "options_programmedby" : {
+	},
+	"options_programmedby" : {
 		"message" : "programmiert von "
-   }
+	}
 }

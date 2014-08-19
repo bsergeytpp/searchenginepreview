@@ -219,10 +219,14 @@ Changelog for SearchenginePreview
     Updated: link to GPL licence
     Added: new thumbnail service
 
-2014-08-18 Version 1.4.4
+2014-08-18 Version 1.4.4 "Summertime Blues"
     Updated: popup for en,de,fr lang
 	Fix: Yippy.com
 	Fix: Yandex.ru and Yandex.com
 	Fix: DuckDuckGo
+
+2014-08-19 Version 1.4.5 "Babelfish"
+    Updated: popup for lang en,de,fr
+
 
 (c)2009-2014 by GwenDragon
