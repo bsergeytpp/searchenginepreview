@@ -6,4 +6,5 @@ test
 *.bak
 *~
 *.pem
+log/*.log
 TODO.txt
