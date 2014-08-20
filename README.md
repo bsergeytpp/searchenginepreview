@@ -1,13 +1,17 @@
 SearchenginePreview
 ===================
 
-SearchenginePreview is a addon for Opera (12, Opera 15 and newer), Chrome and Chromium-like browsers.
+SearchenginePreview is a addon for Opera (12, 15 and newer), Chrome and Chromium-like browsers.
 
 It show the previews of a domain as thumbnail in the results of several a searchenegines.
 
 See it:  
-![SearchenginePreview shows thumbnais in searchengines](http://gwendragon.de/tools/opera/extensions/pics/searcheneginepreview.png)
+![SearchenginePreview shows thumbnails in searchengines](http://gwendragon.de/tools/opera/extensions/pics/searcheneginepreview.png)
 
+and with Hover:  
+![SearchenginePreview shows thumbnails in searchengines after hover](http://gwendragon.de/tools/opera/extensions/pics/searcheneginepreview2.png)
+
+  
 More information can be found at my webpages for [SearchenginePreview](http://gwendragon.de/tools/opera/extensions/index-en.html#searchenginepreview "englisch page") and also in [german](http://gwendragon.de/tools/opera/extensions/index.html#searchenginepreview "german page").
 
 Try it!
@@ -36,7 +40,7 @@ Less prefered is the contact by e-mail at <info@gwendragon.de>, which may be ans
 ##International versions
 
 The settings and popup page of the extension can be translated.   
-Some translations like en,de exist. 
+Some translations like en,de,fr exist. 
 
 But help from non-german and non-englisch users is greatly appreciated! 
 
