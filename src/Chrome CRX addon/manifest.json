@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.4.5",
+	"version" : "1.4.5.1",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
@@ -18,7 +18,7 @@
 		"32" : "icons/icon32.png",
 		"16" : "icons/icon16.png"
 	},
-	"default_locale" : "de",
+	"default_locale" : "en",
 	"options_page" : "options.html",
 	//
 	"background" : {

@@ -1,10 +1,9 @@
-
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.4
+// @version         1.4.5.1
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-08-18 16:02 CEST
+// @modified        2014-08-29
 // @copyright       (c)2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
@@ -295,8 +294,10 @@
 	}
 
 	var getFullDomain = function (href) {
-		var domain = href.match(/http(?:s)?:\/\/[^\/]+/i);
-		return domain ? domain[0].toLowerCase() : href;
+        //  fix ugly http://www.google.at/url?url=http://de.wikipedia.org/wiki/Ex&amp;rct=j&amp;q=&amp;esrc=s&amp;sa=U&amp;ei=m4sAVJHdOqGz0QXt2YHoCw&amp;ved=0CBMQFjAA&amp;usg=AFQjCNGapzi3IaiDqrS1VJs9PrlQjJ4rRw
+		var d1 = href.match(/url=(http(?:s)?:\/\/[^\/]+)/i);      
+		var d2 = href.match(/(http(?:s)?:\/\/[^\/]+)/i);      
+		return d1 ? d1[1].toLowerCase() : d2 ? d2[1].toLowerCase() : href;
 	}
 
 	var getRealURL = function (href) {
