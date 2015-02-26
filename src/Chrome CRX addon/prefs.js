@@ -1,4 +1,3 @@
-
 function setStorageItem(it, val) {
 	localStorage[it] = val;
 	return 1;
@@ -9,7 +8,8 @@ function getStorageItem(it) {
 }
 
 function LoadPrefs() {
-	var e, o;
+	var e,
+	o;
 	o = getStorageItem("previewpic") || 0;
 	if (e = document.getElementById("previewpic")) {
 		e[o].selected = true;
@@ -34,6 +34,8 @@ function SavePrefs() {
 }
 
 // activate only on options page
+
+
 if (document.querySelector("#options")) {
 	LoadPrefs();
 	document.addEventListener("DOMContentLoaded", LoadPrefs, false);
