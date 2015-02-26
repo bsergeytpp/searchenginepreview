@@ -1,3 +1,4 @@
+
 function setStorageItem(it, val) {
 	localStorage[it] = val;
 	return 1;
@@ -33,10 +34,8 @@ function SavePrefs() {
 }
 
 // activate only on options page
-
-
 if (document.querySelector("#options")) {
-	LoadPrefs(); 
+	LoadPrefs();
 	document.addEventListener("DOMContentLoaded", LoadPrefs, false);
 	document.addEventListener("unload", SavePrefs, false);
 	document.querySelector("#savebutton").addEventListener("click", function () {

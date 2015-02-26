@@ -1,10 +1,10 @@
-
+//
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.4
+// @version         1.4.5.2
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-08-18
-// @copyright       (c)2009-2014 Lilo von Hanffstengel (GwenDragon)
+// @modified        2015-02-26 15:00 CET
+// @copyright       (c)2009 Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -654,24 +654,17 @@ var thumbshots = function (url) {
 		style.innerHTML += "\n#west>OL>LI{height:105px;clear:both}\n";
 		head.insertBefore(style, head.lastChild);
 	} else if (isBingMSN(url)) {
-		var res = document.getElementById('results');
-		var iterator = document.evaluate(
-				"//a[starts-with(@href,'http:') or starts-with(@href,'https:')]",
-				res,
-				null,
-				window.XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-				null);
-		var knoten,
-		l = [];
-		while (knoten = iterator.snapshotItem(i)) {
-			l[i++] = knoten;
-		}
-		i = 0;
-		while (a = l[i++]) {
+		var res;
+		if (document.body.querySelectorAll)
+			res = document.body.querySelectorAll('#b_results li.b_algo h2 a');
+		if (!res)
+			return;
+		for (var i = 0; i < res.length; i++) {
+			a = res[i];
 			href = a.href;
-			aParent = a.parentNode; // h3
-			if (aParent.parentNode.getAttribute('class') == 'sb_tlst'
-				 && !a.href.match(/microsofttranslator\.com/)
+			aParent = a.parentNode; // hx
+			if (
+				!a.href.match(/microsofttranslator\.com/)
 				 && a.getAttribute('searchenginepreview') != 'done') {
 				if (a.text != null && a.text.length > 0) {
 					a.setAttribute('searchenginepreview', 'done');
