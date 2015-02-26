@@ -5,6 +5,8 @@ test
 *.psd
 *.bak
 *~
+*.zip
 *.pem
-log/*.log
+*.log
 TODO.txt
+Makefile
