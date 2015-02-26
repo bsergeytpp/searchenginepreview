@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget 
+<widget version="1.4.5.2" 
 	xmlns="http://www.w3.org/ns/widgets" 
 	defaultlocale="en" 
-	id="http://gwendragon.de/tools/opera/userjs/#searchenginepreview" 
-	version="1.4.5.1">
+	id="http://gwendragon.de/repo/tools/opera/extensions/#searchenginepreview">
 	<update-description 
 		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4" />
 	<name>SearchenginePreview</name>

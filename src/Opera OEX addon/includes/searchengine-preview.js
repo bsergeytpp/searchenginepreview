@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.5.1
+// @version         1.4.5.2
 // @published       2009-09-25 10:28 CEST
-// @modified        2014-08-29
+// @modified        2015-02-26 15:00 CET
 // @copyright       (c)2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
@@ -66,17 +66,15 @@
 
 
 (function GwASePv1342676rt074a4711() {
-	var ENABLE_IMAGE_INSERT = 1,
-	ENABLE_PREVIEW_ICON = 0;
-
 	const IMG_MW = 'data:image/gif;base64,R0lGODlhbwBSAOYAAPQLC/Dz8WZmZsRfWswzM8SwrKokJMOloMk+OtjV0/9fXv8kJP86OszMzN4oKf+Li/+lo/9SUt8kJL6GgMhUUv8zM+rs6fqNi/+8u/9mZtaMi/GpqO8oKf729fNQTvHc2v9JSeTHxP+ZmcBzctVJRvAvLv8pKct6ef/m5P98fP+sq+G7uf/MzO87OuiPjf9cW+UvLf9COsxmZt+BgPokJMyZmfYpKvXz8eTSz/jMyugoKcdFQ/S1sv/e2/90c+/y8MyHhfny8f+TkcWAe8+wrcNYV8Jycf///+yTkvj7+fqSkM9AP7MkJP+0s/+qp8xmZt/b2evp5syZmcaIhf9mZv+hn/9eX/9BQe/39/+Af//t7MW1rdA+O9PRzuckJPLIxr96dfguLtJvbvT39c6MhP+Zmc+zrveUlM5KQgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAQUAP8ALAAAAABvAFIAAAf/gEeCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goYw9GE4ipxA5oqugLBAPKRkZCla1ViKfAACsnFoqDxkRVwzExFcgyKqKuoW7icy8mShVPhEMFdhh2tgVxGE8y9BH4ofk0ZRaIj4g2CYm3BXu8CZfz7q794P3zuPOzP/89unDR9DcJmrsKixQEGEBtoUN4THogKhgP0PQMhK82MzfPo2eWKSI8DCDIBALFp502M5FRUEeB+bjCJBjv5niPvLb9EDBNRM+CIFQQOiFO3ctgpTrCDMmzY0gnw4MhWLdwyaKkLCsYGPFUkJRo0ptStZmzk4YFFzhZgLroRpM/7Rps6Hh69SmOAM6xSv25k5NVayxpQHBEBADOuDZEHOuMSIhIK5xWxC0UBEv8LjKcMyZkBDJD7MgyrC1AgfGnTs7mfdAkY+jJnQAiWbwUe1IPd49rELISN1BM2hkc0AkdaTbkUDAXoDryAgmEpQIAhNXG4clUMpB3SnwIsC8fLl3v3tpg+6HSk5UX3BBvdwwEqYk0e79L9mPUsM6NYc8kofzCkkQxmQCyqXDDglUtB1YApEDkn5l8WcfJR+UAGBmmXFAQAH21HdXTR9uNFZfNmESAgw2DIghN2HoQMABAYRTVoQi0jjifhNyggMJOqSoYgVycSDBDgX8sAiJ+DkYE/+E4THFyQ01cOGADhxUWaUDCEzQxXzGMdIfJ1GYMcQAFFAwABgHdBFjl+F8+UkAFsQ5Bpt01mnnnXjmqeeefPbp55+ABirooIQWauihlgggAKKgKOqoo0coaoikkVBKKaOXRrpoJ5kemumjm2o6yKOTQiopqIKQWgiqkI7aqqWhchorrKlu2qmrhNBa66652uprqaIG68mnvwaraq+6XgpqrMYWq+mrrX5CLK/KRuvqqc7eimuz1PqqrSbTctsrItjyKiyzyRZbrSjhpnurqtV6y6y48a7LaDTf3ivtvKvkq6+s//Lib8DgHmvwossirK276v46sMDOdouquOOKSiuUw/w6hrG56R4Cr8MN33lxyN2ai2zIHds5csksf2tvuRTTufG5JAN7bagTP0ywyTsPm3HPQBeqc9CSDL3nx/UqjPPHu+YMrbAqz0pyyjDryu3EIkvd8tQKs/ysqT+z2S7XJacM9dlZV0w1yjUrC7XRrCC99NbRYg2t1WjfCzfRjuzN99+ABy744IQXbvjhiCeueCiBAAA7';
 	const IMG_LOADING = 'data:image/gif;base64,R0lGODlhbwBSAIAAAMzMzP///yH5BAQUAP8ALAAAAABvAFIAAALhjI+py+0Po5y02ouz3rz7D4biSJbmiabqyrbuC8fyTNf2jef6zvf+DwwKh8Si8YhMKpfMpvMJjUqn1Kr1ioUALttAN/ulhLNeLhnxBajRa4O63X2H5c34YVxOu/d8PdPO5/VW1hcISLh0qIgI6OeXaBjpGMlYd9fmNigIR7mJd1bxCaqFObogapqq6kG3B8dZmNkYeOT4uDVZOZuUK8tpO4ibp9SLeFdpPCzMe2x8i0b5iJyc05qsSZuGKf3cg7rK8A0+Tl5ufo6err7O3u7+Dh8vP09fb3+Pn6+/z9/vL1MAADs=';
 	const IMG_PIXEL = 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==';
 	const IMG_PRVICON = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAQCAMAAADH72RtAAADAFBMVEUDRv8ERf8OXf8jdv8+of9m vP/e7v//TgP/dg//li//mR//vEn/yGb/2Iv/3p3/8+f///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA AAAAAAAAAAAAAADneq79AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAB3RJTUUH2QkZCwkG7RBsvgAA AAd0RVh0QXV0aG9yAKmuzEgAAAAMdEVYdERlc2NyaXB0aW9uABMJISMAAAAKdEVYdENvcHlyaWdo dACsD8w6AAAADnRFWHRDcmVhdGlvbiB0aW1lADX3DwkAAAAJdEVYdFNvZnR3YXJlAF1w/zoAAAAL dEVYdERpc2NsYWltZXIAt8C0jwAAAAh0RVh0V2FybmluZwDAG+aHAAAAB3RFWHRTb3VyY2UA9f+D 6wAAAAh0RVh0Q29tbWVudAD2zJa/AAAABnRFWHRUaXRsZQCo7tInAAAAb0lEQVR4nF2PWw6EMAwD +6TepIXe/7Q4YVGB+fMotpQwv4S51eJko2w0pT7JZl4kM6+V2xxCAFlGHezLoEtXjNVixiVmpMl2 oqJgr/+NzTIK2mA2MzpH9Af1H7xFGq4dMzWRhpZiDCFUGkeOx+9fTkfPC8aqu6C3AAAAAElFTkSu QmCC';
 
+	var ENABLE_IMAGE_INSERT = 1, ENABLE_PREVIEW_ICON = 0;
 	var thumbService = '';
 
-	////////////////////////////////////////////////////////////////////////////////////////
+	//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	var isAmazonCOM = function (href) {
 		return href.toLowerCase().match(/^https?:\/\/www\.amazon\.com\//);
@@ -90,7 +88,6 @@
 	var isAmazonFR = function (href) {
 		return href.toLowerCase().match(/^https?:\/\/www\.amazon\.fr\//);
 	}
-
 	var isAmazon = function (href) {
 		return (isAmazonCOM(href) || isAmazonUK(href) || isAmazonDE(href) || isAmazonFR(href));
 	}
@@ -100,9 +97,7 @@
 	}
 
 	var isYandex = function (href) {
-		return (
-			href.indexOf('yandex.ru/yandsearch') >= 0
-			 || href.indexOf('yandex.com/yandsearch') >= 0);
+		return (href.indexOf('yandex.ru/yandsearch') >= 0 || href.indexOf('yandex.com/yandsearch') >= 0);
 	}
 
 	var isGoogle = function (href) {
@@ -205,15 +200,14 @@
 
 		var preview;
 		switch (thumbService) {
-		case "2":
+		case '2':
 			preview = 'http://immediatenet.com/t/m?Size=1024x768&URL=' + site; // Service may be closed in near future!
 			break;
-		case "0":
+		case '0':
 			preview = 'http://api.thumbalizr.com/?width=120&url=' + site; // thumbalizr is very slow; not rellay usable!
 			break;
-		case "1":
+		case '1':
 		default:
-			//http://api.webthumbnail.org?width=500&height=400&screen=1024&url=http://gwendragon.de/blog/
 			preview = 'http://api.webthumbnail.org?height=95&width=110&screen=1024&url=' + site;
 			break;
 		}
@@ -294,9 +288,9 @@
 	}
 
 	var getFullDomain = function (href) {
-        //  fix ugly http://www.google.at/url?url=http://de.wikipedia.org/wiki/Ex&amp;rct=j&amp;q=&amp;esrc=s&amp;sa=U&amp;ei=m4sAVJHdOqGz0QXt2YHoCw&amp;ved=0CBMQFjAA&amp;usg=AFQjCNGapzi3IaiDqrS1VJs9PrlQjJ4rRw
-		var d1 = href.match(/url=(http(?:s)?:\/\/[^\/]+)/i);      
-		var d2 = href.match(/(http(?:s)?:\/\/[^\/]+)/i);      
+		//  fix ugly http://www.google.at/url?url=http://de.wikipedia.org/wiki/Ex&amp;rct=j&amp;q=&amp;esrc=s&amp;sa=U&amp;ei=m4sAVJHdOqGz0QXt2YHoCw&amp;ved=0CBMQFjAA&amp;usg=AFQjCNGapzi3IaiDqrS1VJs9PrlQjJ4rRw
+		var d1 = href.match(/url=(http(?:s)?:\/\/[^\/]+)/i);
+		var d2 = href.match(/(http(?:s)?:\/\/[^\/]+)/i);
 		return d1 ? d1[1].toLowerCase() : d2 ? d2[1].toLowerCase() : href;
 	}
 
@@ -401,7 +395,6 @@
 	}
 
 	var thumbshots = function (url) {
-		//if (document.getElementsByTagName('head')[0].getAttribute('searchenginepreview') == 'done') return;
 		var a;
 		var t = 0;
 		var i = 0;
@@ -676,24 +669,14 @@
 			style.innerHTML += "\n#west>OL>LI{height:105px;clear:both}\n";
 			head.insertBefore(style, head.lastChild);
 		} else if (isBingMSN(url)) {
-			var res = document.getElementById('results');
-			var iterator = document.evaluate(
-					"//a[starts-with(@href,'http:') or starts-with(@href,'https:')]",
-					res,
-					null,
-					window.XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE,
-					null);
-			var knoten,
-			l = [];
-			while (knoten = iterator.snapshotItem(i)) {
-				l[i++] = knoten;
-			}
-			i = 0;
-			while (a = l[i++]) {
+			var res = document.body.querySelectorAll('#b_results li.b_algo h2 a');
+            if (!res) return;     
+			for ( var i = 0; i<res.length; i++ ) {
+                a = res[i];
 				href = a.href;
-				aParent = a.parentNode; // h3
-				if (aParent.parentNode.getAttribute('class') == 'sb_tlst'
-					 && !a.href.match(/microsofttranslator\.com/)
+				aParent = a.parentNode; // hx
+				if (
+					!a.href.match(/microsofttranslator\.com/)
 					 && a.getAttribute('searchenginepreview') != 'done') {
 					if (a.text != null && a.text.length > 0) {
 						a.setAttribute('searchenginepreview', 'done');
