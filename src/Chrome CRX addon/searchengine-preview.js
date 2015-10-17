@@ -1,10 +1,10 @@
 
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.5.2
+// @version         1.4.5.3
 // @published       2009-09-25 10:28 CEST
-// @modified        2015-02-26 15:54 CET
-// @copyright       (c)2009-2014 Lilo von Hanffstengel (GwenDragon)
+// @modified        2015-10-17 15:24 CEST
+// @copyright       (c)2009-2015 Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -38,8 +38,8 @@
 
 /////////////////////////////////////////////////////////////////////////////////////
 var thumbServiceUrl = [
-	'http://api.thumbalizr.com/?width=120&url=',
-	'http://api.webthumbnail.org?width=120&height=100&screen=1024&url=',
+	'https://api.thumbalizr.com/?width=120&url=',
+	'https://api.webthumbnail.org?width=120&height=100&screen=1024&url=',
 	'http://immediatenet.com/t/m?Size=1024x768&URL='
 ];
 /////////////////////////////////////////////////////////////////////////////////////

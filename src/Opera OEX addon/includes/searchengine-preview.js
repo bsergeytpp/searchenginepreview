@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.5.2
+// @version         1.4.5.3
 // @published       2009-09-25 10:28 CEST
-// @modified        2015-02-26 15:00 CET
+// @modified        2015-10-17 15:24 CEST
 // @copyright       (c)2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
@@ -204,11 +204,11 @@
 			preview = 'http://immediatenet.com/t/m?Size=1024x768&URL=' + site; // Service may be closed in near future!
 			break;
 		case '0':
-			preview = 'http://api.thumbalizr.com/?width=120&url=' + site; // thumbalizr is very slow; not rellay usable!
+			preview = 'https://api.thumbalizr.com/?width=120&url=' + site; // thumbalizr is very slow; not rellay usable!
 			break;
 		case '1':
 		default:
-			preview = 'http://api.webthumbnail.org?height=95&width=110&screen=1024&url=' + site;
+			preview = 'https://api.webthumbnail.org?height=95&width=110&screen=1024&url=' + site;
 			break;
 		}
 

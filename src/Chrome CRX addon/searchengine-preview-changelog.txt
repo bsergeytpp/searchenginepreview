@@ -235,11 +235,15 @@ Changelog for SearchenginePreview
     Fix: google.de wrong previews after site redesign
     Other: Cosmetic changes in extension's Popup and Options page 
     Other: updated link to extension's website
-
+	
 2015-02-26 Version 1.4.5.2 "BingBang"
     Other: updated link to extension's website in config.xml //Opera OEX
     Fix:   Missing preview in Bing of 2015 
-    
+
+2015-10-16 Version 1.4.5.3 "SecureMimimi"
+    Other: Adding SSL to API of thumb providers
+	
+	
 
 -------------
-(c)2009-2014 by GwenDragon, Germany, http://gwendragon.de/, <info@gwendragon.de>
+(c)2009-2015 by GwenDragon, Germany, http://gwendragon.de/, <info@gwendragon.de>
