@@ -23,7 +23,7 @@ Download of last version at GitHub
 For Opera (<= 12.x) browsers:   
 <https://github.com/GwenDragon/searchenginepreview/raw/master/searchengine-preview.oex>
 
-For Chrome, Chromium-like and Opera (STABLE, >= 15.x) browsers:  
+For Vivaldi, Chrome, Chromium-like and Opera (STABLE, >= 15.x) browsers:  
 <https://github.com/GwenDragon/searchenginepreview/raw/master/searchengine-preview.crx>
 
 ##Autoupdate
