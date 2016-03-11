@@ -1,18 +1,18 @@
 SearchenginePreview
 ===================
 
-SearchenginePreview is a addon for Opera (12, 15 and newer), Chrome and Chromium-like browsers.
+SearchenginePreview is a addon for Vivaldi, Opera (12, 15 and newer), Chrome and Chromium-like browsers.
 
 It show the previews of a domain as thumbnail in the results of several a searchenegines.
 
 See it:  
-![SearchenginePreview shows thumbnails in searchengines](http://gwendragon.de/tools/opera/extensions/pics/searcheneginepreview.png)
+![SearchenginePreview shows thumbnails in searchengines](http://gwendragon.de/tools/browser/extensions/pics/searcheneginepreview.png)
 
 and with Hover:  
-![SearchenginePreview shows thumbnails in searchengines after hover](http://gwendragon.de/tools/opera/extensions/pics/searcheneginepreview2.png)
+![SearchenginePreview shows thumbnails in searchengines after hover](http://gwendragon.de/tools/browser/extensions/pics/searcheneginepreview2.png)
 
   
-More information can be found at my webpages for [SearchenginePreview](http://gwendragon.de/tools/opera/extensions/index-en.html#searchenginepreview "englisch page") and also in [german](http://gwendragon.de/tools/opera/extensions/index.html#searchenginepreview "german page").
+More information can be found at my webpages for [SearchenginePreview](http://gwendragon.de/tools/browser/extensions/index-en.html#searchenginepreview "englisch page") and also in [german](http://gwendragon.de/tools/browser/extensions/index.html#searchenginepreview "german page").
 
 Try it!
 
@@ -34,7 +34,7 @@ Current versions are updated by Operas autoupdate feature for add-ons and are fe
 
 Bugs can be reported at <https://github.com/GwenDragon/searchenginepreview/issues>
 
-Some personal help you may find on my technical blog at <http://labs.gwendragon.de/blog/Web/Browser/Opera/Extension/>. You can ask in comments section of the extensions blog article.  
+Some personal help you may find on my technical blog at <http://labs.gwendragon.de/blog/Web/Browser/Extension/>. You can ask in comments section of the extensions blog article.  
 Less prefered is the contact by e-mail at <info@gwendragon.de>, which may be answered next day or later, if i have enough time.
 
 ##International versions
