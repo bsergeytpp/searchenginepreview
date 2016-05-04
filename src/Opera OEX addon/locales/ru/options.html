@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<title>Настройки для расширения</title>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	
+	<body>		
+		<div id="options">
+			<h1>Настройки для <script>document.write(widget.name);</script></h1>            
+			<p><img class="pic" src="icons/icon.png" /></p>            
+			<ul class="opts">
+                <li>
+                    <label for="previewpic">Предпросмотр как </label>
+                    <select id="previewpic">
+                        <option value="0">Миниатюра</option> 
+                        <option value="1">При наведении на иконку</option> 
+                    </select>
+                </li>
+                <li>
+                    <label for="previewurl">Создать миниатюру при помощи </label>
+                    <select id="previewurl">
+                        <option value="0">api.thumbalizr.com</option>
+                        <option value="1">api.webthumbnail.org</option>
+						<option value="2">immediatenet.com</option>
+                    </select>                    
+                </li>
+                <li>
+                    <label for="showbutton">Показывать кнопку расширения на панели </label>
+					<input type="checkbox" id="showbutton" />                
+                </li>
+            </ul>            
+            <input id="savebutton" type="submit" value="Save preferences" /> 		
+			<p><em>После сохранения настроек перезагрузите страницу, нажав F5 на клавиатуре.</em></p>			
+            <p class="small">
+                <a href="http://gwendragon.de/tools/opera/extensions/#searchenginepreview">
+                <script>document.write(widget.name);</script></a> 
+				<script>document.write(widget.version);</script>, 
+                сделано <a href="http://gwendragon.de">GwenDragon</a>
+            </p>			
+		</div>
+		<script src="js/prefs.js"></script>		
+	</body>
+
+</html>
