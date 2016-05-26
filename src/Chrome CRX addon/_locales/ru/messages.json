@@ -1,0 +1,123 @@
+{
+	////////////////////////////////////////////////////////////////////////////////
+	// Please forgive my bad translation. I'm from Germany and not working
+	// all the time with technical documentation.
+	// May be you want to help me translating this extension? Or perhaps to
+	// other languages like french, russian, ...?
+	// Thanks ;)
+    //
+	// Kind regards
+	//   GwenDragon
+	//   <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	////////////////////////////////////////////////////////////////////////////////
+	//
+	"version" : {
+		"message" : "Версия"
+	},
+	//
+	"licence" : {
+		"message" : "Лицензия"
+	},
+	"licence_which" : {
+		"message" : "GPLv3, OpenSource"
+	},
+	"licence_text1" : {
+		"message" : ", пожалуйста прочитайте лицензию."
+	},
+	"licence_text2" : {
+		"message" : ""
+	},
+	//
+	"support_bugs" : {
+		"message" : "Поддержка и Ошибки"
+	},
+	"support_bugs_text1" : {
+		"message" : "Поддержку и прочую помощь можно получить в моем блоге"
+	},
+	"support_bugs_text2" : {
+		"message" : "Оставляйте ошибки в комментариях к статье о расширении в моем блоге или в системе отслеживания ошибок"
+	},
+	//
+	"setting" : {
+		"message" : "Настройки"
+	},
+	"setting_text1" : {
+		"message" : "Если Вы хотите поменять настройки, то просто откройте ссылку <a href='options.html'>Настройки</a>."
+	},
+	//
+	"changes" : {
+		"message" : "Изменения"
+	},
+	"changes_text1" : {
+		"message" : "Пожалуйста ознакомьтесь с <a href='searchengine-preview-changelog.txt'>изменениями</a>."
+	},
+	//
+	"thanks" : {
+		"message" : "Благодарности"
+	},
+	"thanks_text1" : {
+		"message" : "Это расширение (бывший UserJS) было закончено только благодаря помощи и поддержке многих пользователей Opera и других людей, упомянутых ниже:"
+	},
+	"thanks_text2" : {
+		"message" : "<ul>
+			<li>В память о <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014), немецком основателе форума Opera-Info, переводчике, добросердечном человеке, знатоке Opera, друге. Мы по тебе скучаем.</li>
+			<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann за то, что вдохновили меня на создание UserJS для предпросмотра во многих поисковых системах</li>
+			<li>Сообщество Opera</li>
+			<li>Nickko</li>
+			<li>Alexs за сообщения об ошибках и ссылки на поисковые системы: google mac, ask, ixquick</li>
+			<li>RocknRolf за поисковую систему: google-linux</li>
+			<li>Heidrun за поисковые системы: clusty, yippy, metacrawler.de</li>
+			<li>Furba, dapxin и других за: подсказку о проблемах oAutoPagerize и других скриптов</li>
+			<li>Vercingetorix за: подсказки о проблемах предпросмотра в MetaGer</li>
+			<li>BigMike за: DuckDuckGo</li>
+			<li>и многих других тестировщиков.</li>
+			<li>Особая благодарность <a href=\"http://www.opera.com/\" target=\"_blank\">Opera ASA</a> за то, что подарила нам браузер Opera!</li>
+			<li>Особая благодарность бесплатным сервисам предпросмотра <a target=\"_blank\" href=\"http://webthumbnail.org/\">webthumbnail.org</a>, <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>, <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a></li>
+		</ul>"
+	},
+	//
+	"giveme" : {
+		"message" : ""
+	},
+	"giveme_text" : {
+		"message" : ""
+	},
+
+	//
+	"description2" : {
+		"description" : "Description of extension",
+		"message" : "SearchenginePreview - это расширение для Opera и Chromium-подобных браузеров, добавляющее предпросмотр результатов поиска во многих поисковых системах."
+	},
+	"options_title" : {
+		"description" : "Title of options page",
+		"message" : "Настройки расширения SearchenginePreview"
+	},
+	"options_for" : {
+		"description" : "Settings for NAMEOFEXTENSION",
+		"message" : "Настройки для расширения"
+	},
+	"options_preview_as" : {
+		"description" : "text for option preview",
+		"message" : "Предпросмотр как "
+	},
+	"options_preview_pic" : {
+		"description" : "option pic",
+		"message" : "Миниатюра"
+	},
+	"options_preview_iconhover" : {
+		"description" : "option hovericon",
+		"message" : "При наведении на иконку"
+	},
+	"options_preview_url" : {
+		"message" : "Создать миниатюру при помощи "
+	},
+	"options_preview_savebutton" : {
+		"message" : "Сохранить настройки"
+	},
+	"options_preview_reloadadvice" : {
+		"message" : "После сохранения настроек перезагрузите страницу, нажав F5 на клавиатуре."
+	},
+	"options_programmedby" : {
+		"message" : "написано "
+	}
+}
