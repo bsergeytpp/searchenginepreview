@@ -1,13 +1,13 @@
 {
 	////////////////////////////////////////////////////////////////////////////////
-	// Pardonnez moi cette mauvais traduction. Je suis une femme allemande et je ne
-	// parle pas la langue francais tous le temps.
 	// Peut-être vous voulez aidez moi traduiser cette extension en francais ou
 	// autres langues?
+	//         Note du traducteur : Oh, oui, je le veux :)  
 	// Merci. ;)
 	// Amitiés
-	//   GwenDragon
+	// GwenDragon
 	//   <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	//         Traduction FR par Pierre Creuseveau, aka Ra-Mon http://vivaldi-fr.com 
 	////////////////////////////////////////////////////////////////////////////////
 	//
 	"version" : {
@@ -21,7 +21,7 @@
 		"message" : "GPLv3, OpenSource"
 	},
 	"licence_text1" : {
-		"message" : ", lisez la licence, s'il vous plait."
+		"message" : ". Merci de consulter les termes de la licence."
 	},
 	"licence_text2" : {
 		"message" : ""
@@ -31,53 +31,59 @@
 		"message" : "Support technique"
 	},
 	"support_bugs_text1" : {
-		"message" : "Support et questionnes sont fait par moi en blog"
+		"message" : "J’assurerai moi-même le support technique et les réponses à vos questions sur mon blog"
 	},
 	"support_bugs_text2" : {
-		"message" : "Reportez les erreurs en blog dans la section commentaires ou par bugtracker"
+		"message" : "Merci de signaler les bugs dans les commentaires de mon blog ou sur le bugtracker"
 	},
 	//
 	"setting" : {
-		"message" : "Préférences"
+		"message" : "Réglages"
 	},
 	"setting_text1" : {
-		"message" : "Pour changer préférences, clickez <a href='options.html'>Préférences</a>, s'il vous plait."
+		"message" : "Pour modifier les options de cette extension, merci de cliquer sur <a href='options.html'>Réglages</a>."
 	},
 	//
 	"changes" : {
-		"message" : "Changements"
+		"message" : "Notes de versions"
 	},
 	"changes_text1" : {
-		"message" : "Lisez le <a href='searchengine-preview-changelog.txt'>changelog</a>, s'il vous plait."
+		"message" : "Merci de consulter l’historique des <a href='searchengine-preview-changelog.txt'>notes de versions</a>."
 	},
 	//
 	"thanks" : {
 		"message" : "Remerciements"
 	},
 	"thanks_text1" : {
-		"message" : "Cette Opera extension et les précédentes scriptes UserJS sont développer et finir avec l'aide et inspiration des Opera internautes."
+		"message" : "Cette extension pour Opera/Vivaldi et les scripts UserJS précédents ont été développés puis finalisés en coopération avec les utilisateurs d’Opera/Vivaldi."
 	},
 	"thanks_text2" : {
 		"message" : "<ul>
-		<li>En mémoire de <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)<br>fondateur de forum Opera-Info-Forum, traducteur, personne chaleureux et omnisciente savoir du navigateur Opera, un ami.
-		<br>Tu nous manqueons.</li>
-		<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann pour inspirez moi en developez mes précédentes scriptes de UserJS</li>
-		<li>Opera Community</li>
+		<li>En mémoire de <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014)<br>fondateur du forum Opera-Info-Forum et traducteur ; un ami chaleureux et fin connaisseur du navigateur Opera.
+		<br>Tu nous manques.</li>
+		<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann pour m’avoir inspiré lors du développement de mes précédents scripts UserJS</li>
+		<li>La communauté Opera</li>
 		<li>Nickko</li>
-		<li>Alexs reporte les erreurs et propose des outils de recherche google mac, ask, ixquick</li>
-		<li>RocknRolf propose des outils de recherche google-linux</li>
-		<li>Heidrun propose des outils de recherche clusty, yippy, metacrawler.de</li>
-		<li>Furba, dapxin et autres reportes des erreurs avec extension oAutoPagerize et autres scriptes de UserJS</li>
-		<li>Vercingetorix reporte problems avec outils de recherche MetaGer</li>
-		<li>BigMike propose outil de recherche DuckDuckGo</li>
-		<li>David Sottimano pour une liste des domaines Google</li>
-		<li>bsergeytpp pour traduction russe</li>
-		<li>et autres bêta-testeurs!</li>
-		<li>Et mercis a Opera ASA, la mère de navigateur Opera!</li>
-		<li>Et mercis aux services de thumbnail
-		 <a target=\"_blank\" href=\"http://webthumbnail.org/\">webthumbnail.org</a>,
-		 <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>,
-		 <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a>
+		<li>Alexs pour ses rapports d’erreurs et m’avoir proposé les moteurs de recherche google mac, ask, ixquick</li>
+		<li>RocknRolf pour m’avoir proposé les moteurs de recherche google-linux</li>
+		<li>Heidrun pour m’avoir proposé les moteurs de recherche clusty, yippy, metacrawler.de</li>
+		<li>Furba, dapxin et autres pour les rapports d'erreurs des extensions oAutoPagerize et autres scripts UserJS</li>
+		<li>Vercingetorix pour avoir rapporté des problèmes avec le moteur de recherche MetaGer</li>
+		<li>BigMike pour m'avoir proposé le moteur de recherche DuckDuckGo</li>
+		<li>David Sottimano pour la liste des domaines Google</li>
+				
+		<!-- Translators add your name and URL in here -->
+		<li><a target='_blank' href='https://github.com/bsergeytpp'>bsergeytpp</a> traduction RU</li>
+		<li>Pierre Creuseveau, aka <a target='_blank' href='http://vivaldi-fr.com/'>Ra-Mon</a>, traduction FR</li>
+		<li><a target='_blank' href='http://rafael.cupermond.ga/'>Rafael</a> traduction ES</li>
+		<!-- Translators -->
+				
+		<li>et tous les autres bêta-testeurs !</li>
+		<li>Et merci à Opera ASA, la maison mère du navigateur Opera !</li>
+		<li>Je remercie aussi les services de création de vignettes d’aperçu de sites Web :
+		 <a target='_blank' href='http://webthumbnail.org/'>webthumbnail.org</a>,
+		 <a target='_blank' href='http://www.thumbalizr.com/'>thumbalizr.com</a>,
+		 <a target='_blank' href='http://immediatenet.com/'>immediatenet.com</a>
 		</li>
 		</ul>"
 	},
@@ -91,39 +97,39 @@
 
 	//
 	"description2" : {
-		"description" : "Description d'Extension",
-		"message" : "Une extension pour navigateur Opera et les Chromium, qui montre miniatures des sites web dans les resultats des outils de recherche."
+		"description" : "Description de l’extension",
+		"message" : "Cette extension, pour les navigateurs Opera et ceux basés sur Chromium, affiche les miniatures des sites dans les pages de résultats des moteurs de recherche courants."
 	},
 	"options_title" : {
-		"description" : "Title de page Préférences",
-		"message" : "Préférences d'Extension"
+		"description" : "Titre de la page de réglages",
+		"message" : "Réglages de l’extension"
 	},
 	"options_for" : {
-		"description" : "Préférences pour Extension",
-		"message" : "Préférences pour extension"
+		"description" : "Réglages de l’extension",
+		"message" : "Réglages de l’extension"
 	},
 	"options_preview_as" : {
 		"description" : "text for option preview",
-		"message" : "Apercu "
+		"message" : "Aperçu sous forme : "
 	},
 	"options_preview_pic" : {
 		"description" : "option pic",
-		"message" : "Miniature"
+		"message" : "de miniature"
 	},
 	"options_preview_iconhover" : {
 		"description" : "option hovericon",
-		"message" : "Icône"
+		"message" : "d’icône"
 	},
 	"options_preview_url" : {
-		"message" : "Créer miniature de page web avec service"
+		"message" : "Créer les miniatures de la page web avec le service :"
 	},
 	"options_preview_savebutton" : {
-		"message" : "Enregistre Préférences"
+		"message" : "Enregistrer les réglages"
 	},
 	"options_preview_reloadadvice" : {
-		"message" : "Après enregistrer des préférences, recharge l'extension touche F5."
+		"message" : "Après avoir enregistré les réglages, veuillez recharger la page de résultats via la touche F5."
 	},
 	"options_programmedby" : {
-		"message" : "programmez par "
+		"message" : "Développée par "
 	}
 }

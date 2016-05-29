@@ -2,24 +2,24 @@
 <html lang="fr">
 	<head>
 		<meta http-equiv="content-type" content="text/html;charset=utf-8">
-		<title>Préférences d'extension</title>
+		<title>Réglages de l’extension</title>
 		<link rel="stylesheet" type="text/css" href="styles.css" />
 	</head>
 	
 	<body>		
 		<div id="options">
-			<h2>Préférences pour <script>document.write(widget.name);</script></h2>            
+			<h2>Réglages pour <script>document.write(widget.name);</script></h2>            
             <p><img class="pic" src="icons/icon.png" /></p>                        
             <ul class="opts">
 				<li>
-					<label for="previewpic">Aperçu montré par </label>
+					<label for="previewpic">Aperçu sous forme </label>
 					<select id="previewpic">
-						<option value="0">image</option> 
-						<option value="1">icône</option> 
+						<option value="0">d’image miniature</option> 
+						<option value="1">d’icône</option> 
 					</select> 
 				</li>            
 	            <li>
-	            	<label for="previewurl">Générer miniature avec service en </label>
+	            	<label for="previewurl">Générer l’image miniature avec le service </label>
 					<select id="previewurl">
 						<option value="0">api.thumbalizr.com</option>
                         <option value="1">api.webthumbnail.org</option>
@@ -27,17 +27,17 @@
 					</select> 
 				</li>                
                 <li>
-                    <label for="showbutton">Button d'extension visible en barre d'outil </label>
+                    <label for="showbutton">Afficher le bouton de l’extension sur la barre d’outils </label>
 					<input type="checkbox" id="showbutton" />                
                 </li>
 			</ul>                        
-            <input id="savebutton" type="submit" value="Enregistrez les préférences" /> 		
-			<p><em>Après enregistrez les préférences touchez F5 (réchargement de page Web), s'il vous plaît.</em></p>			
+            <input id="savebutton" type="submit" value="Enregistrer les réglages" /> 		
+			<p><em>Après avoir enregistré les réglages, veuillez recharger la page de résultats via la touche F5.</em></p>			
             <p class="small">
                 <a href="http://gwendragon.de/tools/opera/extensions/#searchenginepreview">
                 <script>document.write(widget.name);</script></a> 
 				<script>document.write(widget.version);</script>, 
-                réalisé par <a href="http://gwendragon.de">GwenDragon</a>
+                développée par <a href="http://gwendragon.de">GwenDragon</a>
             </p>            
 		</div>
 		<script src="js/prefs.js"></script>		

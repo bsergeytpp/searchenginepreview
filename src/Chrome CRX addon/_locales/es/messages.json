@@ -1,0 +1,131 @@
+{
+	////////////////////////////////////////////////////////////////////////////////
+	// Please forgive my bad translation. I'm from Germany and not working
+	// all the time with technical documentation.
+	// May be you want to help me translating this extension? Or perhaps to
+	// other languages like french, russian, ...?
+	// Thanks ;)
+    //
+	// Kind regards
+	//   GwenDragon
+	//   <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	////////////////////////////////////////////////////////////////////////////////
+	//
+	"version" : {
+		"message" : "Versión"
+	},
+	//
+	"licence" : {
+		"message" : "Licencia"
+	},
+	"licence_which" : {
+		"message" : "GPLv3, Código abierto"
+	},
+	"licence_text1" : {
+		"message" : ", por favor lea la licencia."
+	},
+	"licence_text2" : {
+		"message" : ""
+	},
+	//
+	"support_bugs" : {
+		"message" : "Apoyo y bugs"
+	},
+	"support_bugs_text1" : {
+		"message" : "En mi blog pueden encontrar apoyo y ayuda"
+	},
+	"support_bugs_text2" : {
+		"message" : "Reporte bugs comentando en  mi artículo sobre la extensión o en el bugtracker"
+	},
+	//
+	"setting" : {
+		"message" : "Ajustes"
+	},
+	"setting_text1" : {
+		"message" : "Si quiere cambiar las preferencias, simplemente abra el link <a href='options.html'>Preferences</a>."
+	},
+	//
+	"changes" : {
+		"message" : "Cambios"
+	},
+	"changes_text1" : {
+		"message" : "Por favor lea los <a href='searchengine-preview-changelog.txt'>cambios</a>."
+	},
+	//
+	"thanks" : {
+		"message" : "Gracias y Kudos a"
+	},
+	"thanks_text1" : {
+		"message" : "Esta extensión para opera y el actual USERJS solo podía haber sido terminada gracias a la ayuda y inspiración de muchos usuarios de Opera, y menciono a:"
+	},
+	"thanks_text2" : {
+		"message" : "<ul>
+			<li>En memoria de<i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014), Fundador del foro Opera-Info alemán, traductor, persona con un gran corazón, competente, con mucho conocimiento sobre los navegadores de Opera, un amigo.
+                    Te extrañaremos.</li>
+			<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann por animarme a crear el USERJS, para vistas previas en muchos buscadores.</li>
+			<li>Comunidad de Opera</li>
+			<li>Nickko</li>
+			<li>Alexs por reportar bugs y por links de buscadores: google mac, ask, ixquick</li>
+			<li>RocknRolf por el buscador: google-linux</li>
+			<li>Heidrun por los buscadores clusty, yippy, metacrawler.de</li>
+			<li>Furba, dapxin and others por darme pistas sobre problemas de oAutoPagerize y otros scripts de páginas.</li>
+			<li>Vercingetorix por darme pistas sobre problemas con vistas previas en MetaGer</li>
+			<li>BigMike por: DuckDuckGo</li>
+			
+			<!-- Translators add your name and URL in here -->
+			<li><a target='_blank' href='https://github.com/bsergeytpp'>bsergeytpp</a> traducción RU</li>
+			<li>Pierre Creuseveau, aka <a target='_blank' href='http://vivaldi-fr.com/'>Ra-Mon</a>, traducción FR</li>
+			<li><a target='_blank' href='http://rafael.cupermond.ga/'>Rafael</a> traducción ES</li>
+			<!-- Translators -->			
+			
+			<li>y muchos otros testers.</li>
+			<li>Un agradecimiento especial a Opera ASA ¡como madre del navegador Opera!</li>
+			<li>Un agradecimiento especial a los servicios gratuitos de vistas previas de: <a target='_blank' href='http://webthumbnail.org/'>webthumbnail.org</a>, <a target='_blank' href='http://www.thumbalizr.com/'>thumbalizr.com</a>, <a target='_blank' href='http://immediatenet.com/'>immediatenet.com</a></li>
+		</ul>"
+	},
+	//
+	"giveme" : {
+		"message" : ""
+	},
+	"giveme_text" : {
+		"message" : ""
+	},
+
+	//
+	"description2" : {
+		"description" : "Descripción de la extensión",
+		"message" : "SearchEnginePreview es una extensión para Opera y navegadores Chromium que añade las miniaturas de páginas web a los resultados de búsqueda, funciona en la mayoría de los buscadores."
+	},
+	"options_title" : {
+		"description" : "Título de la página de opciones",
+		"message" : "Ajustes para la extensión SearchenginePreview"
+	},
+	"options_for" : {
+		"description" : "Ajustes para NOMBREDELAEXTENSION",
+		"message" : "Preferencias para la extensión"
+	},
+	"options_preview_as" : {
+		"description" : "texto para la opción de vista previa",
+		"message" : "Previsualizar como "
+	},
+	"options_preview_pic" : {
+		"description" : "option pic",
+		"message" : "Miniatura"
+	},
+	"options_preview_iconhover" : {
+		"description" : "option hovericon",
+		"message" : "Icono con el efecto Hover"
+	},
+	"options_preview_url" : {
+		"message" : "Crear miniatura de sitio con: "
+	},
+	"options_preview_savebutton" : {
+		"message" : "Guardar preferencias"
+	},
+	"options_preview_reloadadvice" : {
+		"message" : "Después de haber guardado sus preferencias, recargue pulsando la tecla F5 de su teclado."
+	},
+	"options_programmedby" : {
+		"message" : "programada por "
+	}
+}

@@ -70,10 +70,16 @@
 			<li>Furba, dapxin and others für hint about problems with oAutoPagerize and other pager scripts</li>
 			<li>Vercingetorix für hints about problems of some previews in MetaGer</li>
 			<li>BigMike for DuckDuckGo</li>
-			<li>bsergeytpp for Russian translation</li>
+		
+			<!-- Translators add your name and URL in here -->
+			<li><a target='_blank' href='https://github.com/bsergeytpp'>bsergeytpp</a> translation RU</li>
+			<li>Pierre Creuseveau, aka <a target='_blank' href='http://vivaldi-fr.com/'>Ra-Mon</a>, translation FR</li>
+			<li><a target='_blank' href='http://rafael.cupermond.ga/'>Rafael</a> translation ES</li>
+			<!-- Translators -->
+		
 			<li>and many other testers.</li>
 			<li>And special thanks to Opera ASA as mother of the Opera Browser!</li>
-			<li>And special thanks to free thumbnail services from <a target=\"_blank\" href=\"http://webthumbnail.org/\">webthumbnail.org</a>, <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>, <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a></li>
+			<li>And special thanks to free thumbnail services from <a target='_blank' href='http://webthumbnail.org/'>webthumbnail.org</a>, <a target='_blank' href='http://www.thumbalizr.com/'>thumbalizr.com</a>, <a target='_blank' href='http://immediatenet.com/'>immediatenet.com</a></li>
 		</ul>"
 	},
 	//

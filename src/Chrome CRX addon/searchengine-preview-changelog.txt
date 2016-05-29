@@ -161,28 +161,28 @@ Changelog for SearchenginePreview
 2013-04-02 Version 1.2.9.4 Final
     Fix Google missing previews
 
-2013-06-01 Version 1.3.0 BETA // Chrome CRX
+2013-06-01 Version 1.3.0 BETA //CRX
     Test as Extension for Chrome and Opera 15
 
-2013-06-01 Version 1.3.0.1 BETA // Chrome CRX
+2013-06-01 Version 1.3.0.1 BETA //CRX
     Added icon (128x128) for browser's Extension settings page
     Localized Options and Popup
 
-2013-06-02 Version 1.3.0.2 BETA // Chrome CRX
+2013-06-02 Version 1.3.0.2 BETA //CRX
     Added yandex.ru
     Speedup Yahoo search
     Bugfixes for all searchengines after website changes
     
-2013-06-02 Version 1.3.0.2 BETA // Opera OEX
+2013-06-02 Version 1.3.0.2 BETA //OEX
     Added yandex.ru
     Speedup Yahoo search
     Bugfixes for all searchengines after website changes
 
-2013-06-04 Version 1.3.0.3 BETA // Chrome CRX
+2013-06-04 Version 1.3.0.3 BETA //CRX
     Fix Goodsearch
     Fix results from custom Yahoo search
 
-2013-06-07 Version 1.3.1.0 Final // Opera OEX + Chrome CRX
+2013-06-07 Version 1.3.1.0 Final //OEX,CRX
     Extension for Chrome and Opera 15
     Added icon (128x128) for browser's Extension settings page
     Added yandex.ru
@@ -192,28 +192,28 @@ Changelog for SearchenginePreview
     Fix Goodsearch
     Fix results from custom Yahoo search
     
-2013-07-04 Version 1.3.2 Final // Opera OEX, Chrome CRX
+2013-07-04 Version 1.3.2 Final //OEX, CRX
     Added international Google TLDs (thanks to http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/)
 
 
-2014-01-08 Version 1.3.3 "Kawime" Final // Chrome CRX, Opera OEX
+2014-01-08 Version 1.3.3 "Kawime" Final //CRX,OEX
     In Memoriam of Karsten "kawime" Mehrhoff, founder of german Opera-Info 
-    forum, Opera translator
-    Removed links to opera-info.de
-    Typos in Popup content
-    CRX Extension's Background process loads on demand (memory saving!)
+	forum, Opera translator
+    Other: Removed links to opera-info.de
+    Fix: Typos in Popup content
+	Fix: CRX Extension's Background process loads on demand (memory saving!)
 
-2014-01-13 Version 1.4 "Free" Final // Chrome CRX, Opera OEX
+2014-01-13 Version 1.4 "Free" Final //CRX,OEX
     Released as GPLv3 licence (OpenSource now)
 
-2014-04-08 Version 1.4.1 // Chrome CRX, Opera OEX
+2014-04-08 Version 1.4.1 //CRX,OEX
     Fix: Google translate link
     Fix: Yandex overlap image and div 
     Fix: Yandex.ru, Yandex.com
     Fix: Metager new website
     Fix: https for Yahoo, Bing
 
-2014-07-24 Version 1.4.2 // Chrome CRX
+2014-07-24 Version 1.4.2 //CRX
     Fix: mistyped filename Icon128 in manifest
 
 2014-08-09 Version 1.4.3
@@ -231,19 +231,24 @@ Changelog for SearchenginePreview
     Added: link for support in Popup
 
 2014-08-21 Version 1.4.5.1 "BoohGooo"
-    Fix: lang defaults to en in manifest //Chrome CRX
+    Fix: lang defaults to en in manifest //CRX
     Fix: google.de wrong previews after site redesign
     Other: Cosmetic changes in extension's Popup and Options page 
     Other: updated link to extension's website
 	
 2015-02-26 Version 1.4.5.2 "BingBang"
-    Other: updated link to extension's website in config.xml //Opera OEX
+    Other: updated link to extension's website in config.xml //OEX
     Fix:   Missing preview in Bing of 2015 
 
 2015-10-16 Version 1.4.5.3 "SecureMimimi"
     Other: Adding SSL to API of thumb providers
 	
+2016-05-29 Version 1.4.5.4 BETA "Babylon 4"
+    Fix: translation FR
+    Other: added translation RU
+    Other: added translation ES
+    Other: added and linked new translators in Popup
+    Other: removed some links in Popup page
 	
-
 -------------
-(c)2009-2015 by GwenDragon, Germany, http://gwendragon.de/, <info@gwendragon.de>
+(c)2009-2016 by GwenDragon, Germany, http://gwendragon.de/, <info@gwendragon.de>

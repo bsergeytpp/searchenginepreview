@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+	</head>
+	
+	<body>
+		<div id="options">
+			<h2 data-i18n="options_for">Preferencias para la extensión</h2>            
+            <p><img src="icons/icon128.png" height="64" width="64" /></p>                        
+            <ul class="opts">
+				<li>
+					<label for="previewpic" data-i18n="options_preview_as"> Vista previa como </label>
+					<select id="previewpic">
+						<option value="0" data-i18n="options_preview_pic"> Miniatura</option> 
+						<option value="1" data-i18n="options_preview_iconhover"> Icono con efecto hoverr</option> 
+					</select> 
+				</li>            
+	            <li>
+	            	<label for="previewurl" data-i18n="options_preview_url"> Crear miniatura de sitio con: </label>
+					<select id="previewurl">
+                        <option value="0">api.thumbalizr.com</option>
+                        <option value="1">api.webthumbnail.org</option>
+						<option value="2">immediatenet.com</option> 
+					</select> 
+				</li>
+			</ul>                        
+            <input id="savebutton" type="submit" data-i18n-value="options_preview_savebutton" value="Guardar preferencias." /> 		
+			<p><em data-i18n="options_preview_reloadadvice">Después de haber guardado sus preferencias, recargue pulsando la tecla F5 de su teclado.</em></p>
+            <p>
+				<small>
+                    <a target="_blank" href="http://gwendragon.de/tools/opera/extensions/#searchenginepreview"><span id="app-name"></span></a>
+                    <span data-i18n="version">Versión</span> 
+                    <span id="app-version"></span> 
+                    <span data-i18n="options_programmedby">programada por</span>                
+                    <a target="_blank" href="http://gwendragon.de/">GwenDragon</a>.
+                </small>
+            </p>            
+		</div>
+		<script src="localize.js"></script>				
+		<script src="prefs.js"></script>		
+	</body>
+
+</html>
