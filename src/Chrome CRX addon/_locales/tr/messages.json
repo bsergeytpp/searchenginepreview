@@ -1,0 +1,123 @@
+{
+	////////////////////////////////////////////////////////////////////////////////
+	// Please forgive my bad translation. I'm from Germany and not working
+	// all the time with technical documentation.
+	// May be you want to help me translating this extension? Or perhaps to
+	// other languages like french, russian, ...?
+	// Thanks ;)
+    //
+	// Kind regards
+	//   GwenDragon
+	//   <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	////////////////////////////////////////////////////////////////////////////////
+	//
+	"version" : {
+		"message" : "Versiyon"
+	},
+	//
+	"licence" : {
+		"message" : "Lisans"
+	},
+	"licence_which" : {
+		"message" : "GPLv3, OpenSource"
+	},
+	"licence_text1" : {
+		"message" : ", Lütfen Lisansı okuyun."
+	},
+	"licence_text2" : {
+		"message" : ""
+	},
+	//
+	"support_bugs" : {
+		"message" : "Destek ve Hatalar"
+	},
+	"support_bugs_text1" : {
+		"message" : "Destek ve yardımı blog sayfamda bulabilirsiniz."
+	},
+	"support_bugs_text2" : {
+		"message" : "Hataları blog sayfamadaki bu eklenti yazısına yorum olarak ekleyebilir ya da hata takip sistemini kullanabilirsiniz."
+	},
+	//
+	"setting" : {
+		"message" : "Ayarlar"
+	},
+	"setting_text1" : {
+		"message" : "Eğer tercihlerinizi değiştirmek istiyorsanız, <a href='options.html'>Tercihler</a> bağlantısını tıklayın."
+	},
+	//
+	"changes" : {
+		"message" : "Değişiklikler"
+	},
+	"changes_text1" : {
+		"message" : "Lütfen <a href='searchengine-preview-changelog.txt'>değişiklik</a> bağlantısını inceleyin."
+	},
+	//
+	"thanks" : {
+		"message" : "Teşekkür ve tebrikler."
+	},
+	"thanks_text1" : {
+		"message" : "Bu eklenti ve eski UserJS birçok Opera kullanıcısının önerileri ve yardımları olmaksızın ve ayrıca aşağıda belirtilen kişler olmaksızın bitirilemezdi."
+	},
+	"thanks_text2" : {
+		"message" : "<ul>
+			<li>In Memoriam <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014), german founder of Opera-Info forum, translator, warmhearted person, with much knowledge about Opera, a friend. We will miss you.</li>
+			<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann for inspiring me to create UserJS for previews in many search engines</li>
+			<li>Opera Community</li>
+			<li>Nickko</li>
+			<li>Alexs for bug reports and searchengine links: google mac, ask, ixquick</li>
+			<li>RocknRolf for searchengine: google-linux</li>
+			<li>Heidrun for searchengines: clusty, yippy, metacrawler.de</li>
+			<li>Furba, dapxin and others for: hint about problems with oAutoPagerize and other pager scripts</li>
+			<li>Vercingetorix for: hints about problems of some previews in MetaGer</li>
+			<li>BigMike for: DuckDuckGo</li>
+			<li>and many other testers.</li>
+			<li>And special thanks to <a href=\"http://www.opera.com/\" target=\"_blank\">Opera ASA</a> as mother of the Opera Browser!</li>
+			<li>And special thanks to free thumbnail services from <a target=\"_blank\" href=\"http://webthumbnail.org/\">webthumbnail.org</a>, <a target=\"_blank\" href=\"http://www.thumbalizr.com/\">thumbalizr.com</a>, <a target=\"_blank\" href=\"http://immediatenet.com/\">immediatenet.com</a></li>
+		</ul>"
+	},
+	//
+	"giveme" : {
+		"message" : ""
+	},
+	"giveme_text" : {
+		"message" : ""
+	},
+
+	//
+	"description2" : {
+		"description" : "Description of extension",
+		"message" : "SearchenginePreview eklentisi Opera and Chromium benzeri tarayıcılar için geliştirilmiş, birçok arama motorunda çalışan ve aranılan web sayfalarının ön izlemelerini gösteren bir eklentidir."
+	},
+	"options_title" : {
+		"description" : " Title of options page",
+		"message" : "SearchenginePreview Eklenti Ayarları"
+	},
+	"options_for" : {
+		"description" : "Settings for NAMEOFEXTENSION",
+		"message" : "Eklenti Tercihleri"
+	},
+	"options_preview_as" : {
+		"description" : "text for option preview",
+		"message" : "Ön İzleme Şekli : "
+	},
+	"options_preview_pic" : {
+		"description" : "option pic",
+		"message" : "Küçük resim"
+	},
+	"options_preview_iconhover" : {
+		"description" : "option hovericon",
+		"message" : "Simge şeklinde	"
+	},
+	"options_preview_url" : {
+		"message" : "Ön İzleme Oluşturma Aracısı : "
+	},
+	"options_preview_savebutton" : {
+		"message" : "Tercihleri Kaydet"
+	},
+	"options_preview_reloadadvice" : {
+		"message" : "Tercihlerinizi kaydettikten sonra lütfen klavyenizdeki F5 tuşuna basarak sayfayı yenileyin."
+	},
+	"options_programmedby" : {
+		"message" : "Geliştirici : "
+	}
+}
