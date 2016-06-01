@@ -2,9 +2,9 @@
 <widget version="1.4.5.4" 
 	xmlns="http://www.w3.org/ns/widgets" 
 	defaultlocale="en" 
-	id="http://gwendragon.de/repo/tools/opera/extensions/#searchenginepreview">
+	id="http://gwendragon.de/repo/tools/browser/extensions/#searchenginepreview">
 	<update-description 
-		href="http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4" />
+		href="http://gwendragon.de/repo/tools/browser/extensions/searchengine-preview/1.4" />
 	<name>SearchenginePreview</name>
 	<description xml:lang="en">SearchenginePreview - a extension for Opera and Chromium-like browsers, showing thumbnails of websites in search results of many search engines.</description>
 	<description xml:lang="de">SearchenginePreview - eine Erweiterung für Opera und Chromium-Browsern, die in Suchmaschinenergebnissen Vorschauen der gefundenen Websites anzeigt.</description>
