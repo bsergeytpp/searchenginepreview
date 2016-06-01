@@ -243,12 +243,13 @@ Changelog for SearchenginePreview
 2015-10-16 Version 1.4.5.3 "SecureMimimi"
     Other: Adding SSL to API of thumb providers
 	
-2016-05-29 Version 1.4.5.4 BETA "Babylon 4"
+2016-06-01 Version 1.4.5.4 "Babylon 4"
     Fix: translation FR
+    Other: added translation TR
     Other: added translation RU
     Other: added translation ES
     Other: added and linked new translators in Popup
     Other: removed some links in Popup page
 	
--------------
+--- 
 (c)2009-2016 by GwenDragon, Germany, http://gwendragon.de/, <info@gwendragon.de>

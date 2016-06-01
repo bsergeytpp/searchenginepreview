@@ -10,3 +10,4 @@ test
 *.log
 TODO.txt
 Makefile
+make
