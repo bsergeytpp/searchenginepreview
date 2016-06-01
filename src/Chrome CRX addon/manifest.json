@@ -9,8 +9,8 @@
 		"name" : "GwenDragon (Lilo von Hanffstengel)",
 		"url" : "http://gwendragon.de/"
 	},
-	"homepage_url" : "http://gwendragon.de/tools/opera/extensions/",
-	"update_url" : "http://gwendragon.de/repo/tools/opera/extensions/searchengine-preview/1.4",
+	"homepage_url" : "http://gwendragon.de/tools/browser/extensions/",
+	"update_url" : "http://gwendragon.de/repo/tools/browser/extensions/searchengine-preview/1.4",
 	//
 	"icons" : {
 		"128" : "icons/icon128.png",
