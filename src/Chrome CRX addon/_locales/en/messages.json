@@ -22,7 +22,7 @@
 		"message" : "GPLv3, OpenSource"
 	},
 	"licence_text1" : {
-		"message" : ", please read Licence."
+		"message" : ", please read the Licence."
 	},
 	"licence_text2" : {
 		"message" : ""
@@ -35,14 +35,14 @@
 		"message" : "Support and help can be found at my blog"
 	},
 	"support_bugs_text2" : {
-		"message" : "Report bugs in comments section of article about the extension in my blog or bugtracker"
+		"message" : "Report bugs through the comments section of the extension article in my blog or through the bugtracker in"
 	},
 	//
 	"setting" : {
 		"message" : "Settings"
 	},
 	"setting_text1" : {
-		"message" : "If you need to change preferences, just open link <a href='options.html'>Preferences</a>."
+		"message" : "If you want to change preferences, just open the <a href='options.html'>Preferences</a> link."
 	},
 	//
 	"changes" : {
@@ -61,20 +61,21 @@
 	"thanks_text2" : {
 		"message" : "<ul>
 			<li>In Memoriam <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014), german founder of Opera-Info forum, translator, warmhearted person, with much knowledge about Opera, a friend. We will miss you.</li>
-			<li>Edward Ackroyd, Oliver Roth,Carlo Zottmann for inspiring me to create UserJS for previews in many search engines</li>
+			<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann for inspiring me to create UserJS for previews in many search engines</li>
 			<li>Opera Community</li>
 			<li>Nickko</li>
-			<li>Alexs for bug reports and searchengine links google mac, ask, ixquick</li>
-			<li>RocknRolf for searchengine google-linux</li>
-			<li>Heidrun for searchengines clusty, yippy, metacrawler.de</li>
-			<li>Furba, dapxin and others für hint about problems with oAutoPagerize and other pager scripts</li>
-			<li>Vercingetorix für hints about problems of some previews in MetaGer</li>
+			<li>Alexs for bug reports and new search engine links for google mac, ask, ixquick</li>
+			<li>RocknRolf for the google-linux search engine</li>
+			<li>Heidrun for clusty, yippy, metacrawler.de search engines</li>
+			<li>Furba, dapxin and others for hints about problems with oAutoPagerize and other page scripts</li>
+			<li>Vercingetorix for hints about problems of some previews in MetaGer</li>
 			<li>BigMike for DuckDuckGo</li>
 		
 			<!-- Translators add your name and URL in here -->
 			<li><a target='_blank' href='https://github.com/bsergeytpp'>bsergeytpp</a> translation RU</li>
 			<li>Pierre Creuseveau, aka <a target='_blank' href='http://vivaldi-fr.com/'>Ra-Mon</a>, translation FR</li>
 			<li><a target='_blank' href='http://rafael.cupermond.ga/'>Rafael</a> translation ES</li>
+			<li><a target='_blank' href='https://github.com/An-dz'>André Zanghelini, aka An_dz</a> translation PT_BR</li>
 			<li><a target='_blank' href='https://about.me/zahek'>Zahek</a> translation TR</li>
 			<!-- Translators -->
 		
@@ -94,15 +95,15 @@
 	//
 	"description2" : {
 		"description" : "Description of extension",
-		"message" : "SearchenginePreview is a Extension for Opera and Chromium-like browsers, showing thumbnails of websites in search results of many search engines."
+		"message" : "SearchenginePreview is an Extension for Opera and Chromium-like browsers, that shows website preview thumbnails in the search results of many search engines."
 	},
 	"options_title" : {
 		"description" : "Title of options page",
-		"message" : "Settings for Extension SearchenginePreview"
+		"message" : "Settings for SearchenginePreview Extension"
 	},
 	"options_for" : {
 		"description" : "Settings for NAMEOFEXTENSION",
-		"message" : "Preferences for Extension"
+		"message" : "Extension Preferences"
 	},
 	"options_preview_as" : {
 		"description" : "text for option preview",
@@ -123,7 +124,7 @@
 		"message" : "Save preferences"
 	},
 	"options_preview_reloadadvice" : {
-		"message" : "After saving preferences please reload py pressing F5 on keyboard."
+		"message" : "After saving preferences please reload the search page by pressing F5 on keyboard."
 	},
 	"options_programmedby" : {
 		"message" : "programmed by "

@@ -1,0 +1,132 @@
+{
+	////////////////////////////////////////////////////////////////////////////////
+	// Please forgive my bad translation. I'm from Germany and not working
+	// all the time with technical documentation.
+	// May be you want to help me translating this extension? Or perhaps to
+	// other languages like french, russian, ...?
+	// Thanks ;)
+    //
+	// Kind regards
+	//   GwenDragon
+	//   <info@gwendragon.de>, <http://labs.gwendragon.de/blog/>
+	////////////////////////////////////////////////////////////////////////////////
+	//
+	"version" : {
+		"message" : "Versão"
+	},
+	//
+	"licence" : {
+		"message" : "Licença"
+	},
+	"licence_which" : {
+		"message" : "GPLv3, OpenSource"
+	},
+	"licence_text1" : {
+		"message" : ", por favor, leia a Licença."
+	},
+	"licence_text2" : {
+		"message" : ""
+	},
+	//
+	"support_bugs" : {
+		"message" : "Suporte e Bugs"
+	},
+	"support_bugs_text1" : {
+		"message" : "Suporte e ajuda podem ser encontrados no meu blog"
+	},
+	"support_bugs_text2" : {
+		"message" : "Reporte bugs pelos comentários dos artigos sobre a extensão no meu blog ou pelo bugtracker no"
+	},
+	//
+	"setting" : {
+		"message" : "Preferências"
+	},
+	"setting_text1" : {
+		"message" : "Se você quer modificar as preferências, clique no link: <a href='options.html'>Preferências</a>."
+	},
+	//
+	"changes" : {
+		"message" : "Atualizações"
+	},
+	"changes_text1" : {
+		"message" : "Leia o <a href='searchengine-preview-changelog.txt'>changelog</a>."
+	},
+	//
+	"thanks" : {
+		"message" : "Thanks and Kudos to"
+	},
+	"thanks_text1" : {
+		"message" : "Esta Extensão e seu antigo UserJS só conseguiram ser criados com a ajuda e inspiração de muitos usuários do Opera e outros, dentre estes:"
+	},
+	"thanks_text2" : {
+		"message" : "<ul>
+			<li>Em memória a <i>Karsten \"kawime\" Mehrhoff</i> (&dagger;2014), fundador alemão do fórum Opera-Info, tradutor, pessoa de bom coração, com muito conhecimento sobre o Opera, um amigo. Vamos sentir saudades de você.</li>
+			<li>Edward Ackroyd, Oliver Roth, Carlo Zottmann por me inspirar a criar o UserJS que originou esta extensão</li>
+			<li>A Comunidade do Opera</li>
+			<li>Nickko</li>
+			<li>Alexs por reportar bugs e adicionar links para os buscadores: google mac, ask, ixquick</li>
+			<li>RocknRolf por adicionar o google-linux</li>
+			<li>Heidrun por adicionar clusty, yippy, metacrawler.de</li>
+			<li>Furba, dapxin e outros por dicas sobre problemas com oAutoPagerize e outros scripts</li>
+			<li>Vercingetorix por dicas sobre problemas com as miniaturas no MetaGer</li>
+			<li>BigMike por adicionar DuckDuckGo</li>
+		
+			<!-- Translators add your name and URL in here -->
+			<li><a target='_blank' href='https://github.com/bsergeytpp'>bsergeytpp</a> tradução RU</li>
+			<li>Pierre Creuseveau, aka <a target='_blank' href='http://vivaldi-fr.com/'>Ra-Mon</a>, tradução FR</li>
+			<li><a target='_blank' href='http://rafael.cupermond.ga/'>Rafael</a> tradução ES</li>
+			<li><a target='_blank' href='https://github.com/An-dz'>André Zanghelini, aka An_dz</a> tradução PT_BR</li>
+			<li><a target='_blank' href='https://about.me/zahek'>Zahek</a> tradução TR</li>
+			<!-- Translators -->
+		
+			<li>e muitos outros testadores.</li>
+			<li>E um obrigado especial à Opera ASA como mãe do Navegador Opera!</li>
+			<li>E um obrigado especial aos serviços gratuítos de geração de miniaturas <a target='_blank' href='http://webthumbnail.org/'>webthumbnail.org</a>, <a target='_blank' href='http://www.thumbalizr.com/'>thumbalizr.com</a>, <a target='_blank' href='http://immediatenet.com/'>immediatenet.com</a></li>
+		</ul>"
+	},
+	//
+	"giveme" : {
+		"message" : ""
+	},
+	"giveme_text" : {
+		"message" : ""
+	},
+
+	//
+	"description2" : {
+		"description" : "Description of extension",
+		"message" : "SearchenginePreview é uma extensão para Opera e navegadores Chromium, que exibe miniaturas dos sites nas pesquisas de vários mecanismos de busca."
+	},
+	"options_title" : {
+		"description" : "Title of options page",
+		"message" : "Preferências Para a Extensão SearchenginePreview"
+	},
+	"options_for" : {
+		"description" : "Settings for NAMEOFEXTENSION",
+		"message" : "Preferências da Extensão"
+	},
+	"options_preview_as" : {
+		"description" : "text for option preview",
+		"message" : "Miniaturas como "
+	},
+	"options_preview_pic" : {
+		"description" : "option pic",
+		"message" : "Miniaturas"
+	},
+	"options_preview_iconhover" : {
+		"description" : "option hovericon",
+		"message" : "Ícone para passar o mouse sobre"
+	},
+	"options_preview_url" : {
+		"message" : "Criar miniaturas com "
+	},
+	"options_preview_savebutton" : {
+		"message" : "Salvar preferências"
+	},
+	"options_preview_reloadadvice" : {
+		"message" : "Após salvar as preferências recarregue a página da pesquisa teclando F5."
+	},
+	"options_programmedby" : {
+		"message" : "programado por "
+	}
+}
