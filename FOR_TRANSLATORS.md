@@ -47,7 +47,7 @@ If you channge something in the translated files dont forget to Reload the exten
 
 ### Testing in Chromium-like browsers
 
-In Extension manager "Load unpacked extension..." and select the folder where the manifest.masion is stored.   
+In Extension manager "Load unpacked extension..." and select the folder where the manifest.json is stored.   
 If you change something in the translated files dont forget to "Reload" the extension in Extension manager to see the changes.
 
 ### Contributing the translation
