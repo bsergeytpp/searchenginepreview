@@ -40,7 +40,7 @@ Less prefered is the contact by e-mail at <info@gwendragon.de>, which may be ans
 ##International versions
 
 The settings and popup page of the extension can be translated.   
-Some translations like EN, ES, DE, RU, FR, TR exist. 
+Some translations like EN, PT, BR, ES, DE, RU, FR, TR exist. 
 
 But help from non-german and non-englisch users is greatly appreciated! 
 
