@@ -3,7 +3,7 @@
 Thank you very much for helping me to improve the extension and your contribution to this OpenSource software.
 Now, what can you do? 
 
-Each language needs to be added separately in a subfolder of the corresponding locale folder of the extension.
+Each language needs to be added separately in a subfolder of the corresponding locale folder of the extension.  
 For the CRX (Chromium like browsers) extension that is the folder _locales, for the OEX (old Opera 12.x browser) extenion that is the folder locale.
 For example the french (FR) translation of the CRX extension resides in _locales/fr/, the russian (RU) translation in _locales/ru/ and so on.
 
@@ -11,7 +11,7 @@ For example the french (FR) translation of the CRX extension resides in _locales
 
 You need to translate strings in these files
 
-_locales/.../message.json
+* _locales/.../message.json
 
 If you like to be mentioned as translator of the extension dont forget to add a line with your name or nick and a link to your website in messages.json.
 
@@ -19,9 +19,9 @@ If you like to be mentioned as translator of the extension dont forget to add a 
 
 You need to translate strings in these files:
 
-locale/.../options.html
-locale/.../popup.html
-config.xml
+* locale/.../options.html
+* locale/.../popup.html
+* config.xml
 
 Please, dont forget to add a line with your name or nick and a link to your website in messages.json and popup.html.
 
@@ -29,15 +29,15 @@ And you need to add a line to file config.xml:
 
 1. change the "en" value to your language 
 2. translate the string in description element to your language
-  
-	<description xml:lang="en">
-		SearchenginePreview - a extension for Opera and Chromium-like browsers, showing thumbnails of websites in search results of many search engines.
-	</description>
-	
+```
+<description xml:lang="en">
+	SearchenginePreview - a extension for Opera and Chromium-like browsers, showing thumbnails of websites in search results of many search engines.
+</description>
+```
 
 ## Testing the extension
 
-For testing tne translation you need to open in the extension manager of your browser. 
+For testing tne translation you need to open in the extension manager of your browser.  
 The extension manager must be set to Developer mode.
 
 ### Testing in Opera 12
@@ -61,5 +61,3 @@ I will check it and integrate your patches and translations.
 Thanks a lot for testing and helping. 
 
 You will be mentioned and added as a translator in changelog and extension popup.
-
-
