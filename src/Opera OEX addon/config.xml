@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<widget version="1.4.5.4" 
+<widget version="1.4.5.5" 
 	xmlns="http://www.w3.org/ns/widgets" 
 	defaultlocale="en" 
 	id="http://gwendragon.de/repo/tools/browser/extensions/#searchenginepreview">
@@ -11,6 +11,19 @@
 	<description xml:lang="fr">SearchenginePreview - une extension, pour les navigateurs Opera et ceux basés sur Chromium, affiche les miniatures des sites dans les pages de résultats des moteurs de recherche courants.</description>
 	<description xml:lang="es">SearchEnginePreview - una extensión para Opera y navegadores Chromium que añade las miniaturas de páginas web a los resultados de búsqueda, funciona en la mayoría de los buscadores.</description>
 	<description xml:lang="ru">SearchenginePreview - это расширение для Opera и Chromium-подобных браузеров, добавляющее предпросмотр результатов поиска во многих поисковых системах.</description>
+	<!-- 
+         
+         !!! For translators !!!
+         The element description needs changes:
+		 1. change the "en" value to your language 
+		 2. translate the string in description element to your language
+         
+	-->
+	<!--
+	<description xml:lang="en">
+		SearchenginePreview - a extension for Opera and Chromium-like browsers, showing thumbnails of websites in search results of many search engines.
+	</description>
+	-->
 	<author 
 		href="http://gwendragon.de/" 
 		email="info@gwendragon.de">GwenDragon</author>
