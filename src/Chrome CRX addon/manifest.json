@@ -1,7 +1,7 @@
 {
 	// Required
 	"name" : "SearchenginePreview",
-	"version" : "1.4.5.5",
+	"version" : "1.4.5.6",
 	"manifest_version" : 2,
 	// Recommended
 	"description" : "__MSG_description2__",
@@ -230,7 +230,9 @@
 				"*://*.search.yahoo.com/yhs/search*",
 				"http://*.yippy.com/search*",
 				"*://*.yandex.com/yandsearch*",
-				"*://*.yandex.ru/yandsearch*"
+				"*://*.yandex.ru/yandsearch*",
+				"*://*.yandex.com/search*",
+				"*://*.yandex.ru/search*"
 			],
 			"js" : ["searchengine-preview.js"],
 			"run_at" : "document_start"

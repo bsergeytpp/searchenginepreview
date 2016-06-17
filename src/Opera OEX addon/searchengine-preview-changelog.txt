@@ -243,13 +243,22 @@ Changelog for SearchenginePreview
 2015-10-16 Version 1.4.5.3 "SecureMimimi"
     Other: Adding SSL to API of thumb providers
 	
-2016-05-30 Version 1.4.5.4 BETA "Babylon 4"
+2016-06-01 Version 1.4.5.4 "Babylon 4"
     Fix: translation FR
     Other: added translation TR
     Other: added translation RU
     Other: added translation ES
     Other: added and linked new translators in Popup
     Other: removed some links in Popup page
-	
+
+2016-06-03 Version 1.4.5.5 "Babylon 5"
+    Fix:   translation EN
+    Other: added BR translation
+
+2016-06-17 Version 1.4.5.6 "With Love to Russia"
+    Fix:   issue #6 Yandex.ru shows previews only after second reload
+    Other: added second search URL at Yandex
+
+
 -------------
 (c)2009-2016 by GwenDragon, Germany, http://gwendragon.de/, <info@gwendragon.de>
