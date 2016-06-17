@@ -1,10 +1,10 @@
 
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.5.3
+// @version         1.4.5.6
 // @published       2009-09-25 10:28 CEST
-// @modified        2015-10-17 15:24 CEST
-// @copyright       (c)2009-2015 Lilo von Hanffstengel (GwenDragon)
+// @modified        2016-06-17 11:49 CEST
+// @copyright       (c)2009-2016 Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
 // @download        https://github.com/GwenDragon/searchenginepreview
@@ -34,6 +34,7 @@
 // Thanks to BigMike (http://opera-info.de/forum/) for DuckDuckGo
 // Thanks to David Sottimano (http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/) for Googles TLDs
 // Thanks to Karsten "kawime" Mehrhoff (†2014) (http://opera-info.de/)
+// Thanks to all translators
 // Thanks to all beta testers
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -758,7 +759,12 @@ var PreviewsInWebpage = function (generate) {
 			stockify();
 		}
 	}
-	thumbshots(url);
+	
+	// fix problem on Yandex; see https://github.com/GwenDragon/searchenginepreview/issues/6#issuecomment-226719609
+	if(ENABLE_PREVIEW_ICON || ENABLE_IMAGE_INSERT) { 
+		thumbshots(url);
+	}
+	
 	//console.log("DEBUG:"+url);
 }
 
