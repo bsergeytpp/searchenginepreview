@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name            Searchengine preview
 // @author          Lilo von Hanffstengel aka GwenDragon
-// @version         1.4.5.3
+// @version         1.4.5.6
 // @published       2009-09-25 10:28 CEST
-// @modified        2015-10-17 15:24 CEST
+// @modified        2015-06-17 12:13 CEST
 // @copyright       (c)2009-now Lilo von Hanffstengel (GwenDragon)
 // @license         GPLv3, see http://www.gnu.org/licenses/
 // @description     Shows preview of webpage in search engine's results
@@ -33,7 +33,9 @@
 // @include         *startpage.com/do/search*
 // @include         *search.yahoo.*/search*
 // @include         *yippy.com/search*
+// @include         *yandex.ru/search*
 // @include         *yandex.ru/yandsearch*
+// @include         *yandex.com/search*
 // @include         *yandex.com/yandsearch*
 // @include         *zotspot.*/search/*
 // ==/UserScript==
@@ -63,6 +65,7 @@
 // Thanks to David Sottimano (http://www.distilled.net/blog/uncategorized/google-cctlds-and-associated-languages-codes-reference-sheet/) for Googles TLDs
 // Thanks to Karsten "kawime" Mehrhoff (†2014) (http://opera-info.de/)
 // Thanks to all beta testers
+// Thanks to all translators
 
 
 (function GwASePv1342676rt074a4711() {
@@ -97,7 +100,7 @@
 	}
 
 	var isYandex = function (href) {
-		return (href.indexOf('yandex.ru/yandsearch') >= 0 || href.indexOf('yandex.com/yandsearch') >= 0);
+		return ( href.indexOf('yandex.ru/yandsearch') >= 0 || href.indexOf('yandex.ru/search') >= 0 || href.indexOf('yandex.com/yandsearch') >= 0 || href.indexOf('yandex.com/search') >= 0	);
 	}
 
 	var isGoogle = function (href) {
@@ -771,7 +774,12 @@
 			if (isGoogle(url))
 				stockify();
 		}
-		thumbshots(url);
+		
+		// fix problem on Yandex; see https://github.com/GwenDragon/searchenginepreview/issues/6#issuecomment-226719609
+		if(ENABLE_PREVIEW_ICON || ENABLE_IMAGE_INSERT) { 
+			thumbshots(url);
+		}
+		
 	}
 
 	var fetchOptions = function () {
